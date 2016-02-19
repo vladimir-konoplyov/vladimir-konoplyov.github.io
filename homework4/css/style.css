@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+   background: linear-gradient(to bottom, #11cde1, #0c739f);  
+}
+
+.background-gradient1 {
+	width: 100%;
+	height: 28px;
+	border-top: 1px solid #b6bbc1;
+	background: #128aa7;
+}
+
+.background-gradient2 {
+	width: 100%;
+	height: 146px;
+	border-top: 1px solid #5ef0ff;
+	background: linear-gradient(to bottom, #41c6d3, #ffffff);
+}
+
+/*  .background-gradient3 {
+	width: 100%;
+	background: linear-gradient(to bottom, #11cde1, #0c739f);
+}  */
+ 
+.wrapper {
+	position: relative;
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+ 	box-shadow: 0px 3px 5px 1px #000000;
+ 	z-index: 3;
+}
+
+.header {
+	position: relative;
+	display: block;
+	width: 1000px;
+	height: 175px;
+	background: white;
+	}
+
+.box-image-logo {
+	position: absolute;
+	top: 10px;
+	left: 28px;
+}
+
+.text-under-logo {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #128aa7;
+}
+
+.box-text-contacts {
+	position: absolute;
+	top: 10px;
+	right: 34px;
+	line-height: 18px;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #128aa7;
+}
+
+.box-country-links  {
+	position: absolute;
+	top: 112px;
+	right: 34px;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #128aa7;
+}
+.box-country-links a {
+	float: left;
+	 padding-left: 12px; 
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #128aa7;
+}
+
+/* .box-country-links img {
+	padding-left: 15px;	
+} */
+	
+
+.box-country-links a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.main-photo {
+	width: 1000px;
+	height: 238px;
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+.box-for-menu {
+	position: relative;
+	width: 1000px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 2px 10px 1px #000000;
+	z-index: 2;
+}
+
+.menu {	
+	/* position: relative; */
+	width: 1000px;
+	height: 28px;
+ 	background: linear-gradient(to bottom, #373737, #303030); 
+	border-bottom: 1px solid black;	
+}
+
+.menu > li {
+	position: relative;
+	float: left;
+	list-style: none;
+	padding: 0 0 0 28px; 
+}
+
+.menu a {
+	display: block;
+	line-height: 28px;
+	padding: 0 20px 0 20px;
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+}
+
+.menu a img {
+	padding-left: 5px;
+}
+
+.menu ul {
+	position: absolute;
+	display: none;
+	background-color: #303030;
+	box-shadow: 0px 11px 21px 0px #000000;
+}
+
+.menu ul li {
+	float: none;
+	width: 160px;
+	list-style: none;
+}
+
+.menu ul a {
+	text-decoration: none;
+	color: white;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul li:hover {
+	background: #595b5c;
+}
+
+
+.menu li:hover > ul{
+	border-top: 1px solid black;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.container1 {
+	float:left;
+    width:100%;
+    background: #edeef0;
+    overflow:hidden;
+    position:relative;
+    z-index: 0;
+} 
+
+.container2 {
+	float:left;
+    width:100%;
+    background: white;
+    position:relative;
+    right:20%;;
+    z-index: 0;        
+    border-right: 1px solid #c7cacf;
+} 
+
+.container3 {
+    float:left;
+    width:100%;
+    background:#edeef0;
+    position:relative;
+    right:60%;
+	border-right: 1px solid #c7cacf;
+    z-index: 0;       
+}
+
+.column-left {
+    float:left;
+    width:18%;
+    position:relative;
+    left:82%;
+    overflow:hidden;
+    z-index: 0;
+    line-height: 25px;
+    font-family: Tahoma;
+	font-size: 14px;
+}
+
+.column-central {
+    float:left;
+    width:58%;
+    position:relative;
+    left:84%;
+    overflow:hidden;
+    z-index: 0;
+    line-height: 25px;
+    font-family: Tahoma;
+	font-size: 14px;
+}
+
+.column-right {
+    float:left;
+    width:18%;
+    position:relative;
+    left:86%;
+	line-height: 25px;
+	font-family: Tahoma;
+	font-size: 14px;
+    overflow:hidden;
+    z-index: 0;
+}
+
+
+.text-header-left-column {
+	padding-top: 10px;
+	color: #424c43;
+	text-shadow: 2px 2px 2px #ccc;
+	font-family: Tahoma;
+	font-size: 18px;
+	text-align: center;
+}
+
+.text-header-right {
+	padding-top: 10px;
+	color: #424c43;
+	text-shadow: 2px 2px 2px #ccc;
+	font-family: Tahoma;
+	font-size: 18px;
+	text-align: center;
+}
+
+.text-header-content {
+	padding-top: 10px;
+	color: #424c43;
+	text-shadow: 2px 2px 2px #ccc;
+	font-family: Tahoma;
+	font-size: 25px;
+	text-align: center;
+}
+
+.footer {
+	background: #0c739f;
+	color: #ffffff;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
