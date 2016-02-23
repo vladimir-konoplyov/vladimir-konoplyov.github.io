@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eeeeee;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue";
+}
+	
+
+.main-container {
+ 	margin: 0 auto;
+	width: 1215px;
+	height: 1048px;
+}
+
+.menu-container {
+	padding-left: 450px;
+}
+
+.menu-header {
+	width: 1215px; 
+	height: 36px;
+	background-image: url(../img/header-line-background.jpg); 
+} 
+
+.menu-header li {
+	float: left;
+	padding: 0 10px;
+	line-height: 36px;
+	list-style: none;		
+}
+
+.menu-header a {
+	color: #60b5ed;		
+	text-decoration: none;
+	font-family: "Helvetica Neue";
+}
+
+.menu-header li:hover {
+	background: #60b5ed;
+}
+
+
+.menu-header li a:hover,
+.menu-header li:hover > a,
+.menu-header a:hover {
+	color: #ffffff;
+}
+
+.box-with-flag img {
+	float: left;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.box-with-flag a {
+	display: inline-block;
+	padding-right: 20px;
+	float: left;
+	line-height: 36px;
+	color: #fefefe; 
+	font-family: "Helvetica Neue";
+}
+
+.box-with-flag a img {
+	float: left;
+	padding-top: 5px;
+}
+
+.box-with-flag a:hover {
+	background: #60b5ed;
+}
+
+.box-ola {
+	float: left;
+	padding: 0 12px;
+	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+}
+.box-ola p {
+	float: left;
+	line-height: 36px;
+	color: #ffffff;
+	font-family: "Helvetica Neue";
+}
+
+.box-ola a {
+	float: left;
+	line-height: 36px;
+	color: #ffffff;
+	text-decoration: underline;
+	font-family: "Helvetica Neue";
+}
+
+.box-ola a:hover {
+	text-decoration: none;
+}
+
+ .wrapper {
+background: url(../img/image-background-1.jpg)  no-repeat;
+background-position: top center;
+} 
+
+.befor_box-wrapper {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.box-wrapper {
+	width: 560px;
+	height: 615px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.7);
+}
+
+
+.box-wrapper > p {
+	padding: 10px 0 10px 0;
+	font-size: 24px;
+	color: #ffffff;
+	border-bottom: 2px solid #bfc9b1;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+}
+
+.facebook-button {
+	display: block;
+	padding: 36px 0 36px 0;	
+	text-align: center;
+}
+
+.element-ou {
+	line-height: 20px;
+	text-align: center;
+	margin: 0 auto;
+	color: #999999;
+	font-family: "Helvetica Neue";
+}
+
+.element-ou img {
+	padding-bottom: 5px;
+}
+
+
+.form {
+	text-align: center;
+	padding-top: 30px; 	
+}
+
+.box-for-input {
+	padding-bottom: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 275px;
+	height: 35px;
+	padding-left: 20px;
+	background: linear-gradient(to bottom, #111010, #111111);
+	color: #0b25e7;	
+	font-size: 14px;
+	font-family: "Helvetica Neue";
+	border: none;
+	border-bottom: 1px solid #494a49;
+}
+
+
+::-webkit-input-placeholder {
+	color: #cccccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	background: linear-gradient(to bottom, #1e4b76, #1f5384);
+	box-shadow: 0px 0px 10px 2px #689bcc; 
+	color: #ffffff;
+}
+
+::-webkit-checkbox-placeholder {
+	color: #cccccc;
+}
+
+.form label {
+	color: #cccccc;
+	font-family: "Helvetica Neue";
+}
+
+.form input[type="checkbox"] {
+	margin: 0 0 0 -40px;
+}
+
+.box-for-submit {
+	padding-top: 20px;
+}
+
+input[type="submit"] {
+	width: 149px;
+	height: 32px;
+	color: #ffffff;
+	background: linear-gradient(to bottom, #4faddb, #2e7ac4);
+	border: 2px solid #67c6e6;
+	border-radius: 3px;
+	font-size: 14px;
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+}
+
+.text_under_form {
+	padding-top: 15px; 
+}
+
+.text_under_form p {
+	padding-top: 5px;
+	text-align: center;	
+	font-size: 11px; 
+	font-family: "Helvetica Neue";
+	color: #cccccc;
+	border: none;
+	font-weight: normal;
+}
+
+
