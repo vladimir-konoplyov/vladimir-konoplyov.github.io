@@ -208,30 +208,35 @@ padding-left: 52px;
 
 .li-kompany {
 	width: 124px;
-	padding-left: 126px;
+	padding-left: 127px;
+	margin-top: 2px;
 	text-align: center;
 }
 
 .li-oplata {
 	width: 83px;
 	padding-left: 3px;
+	margin-top: 2px;
 	text-align: center;
 }
 
 .li-dostavka {
 	width: 95px;
 	padding-left: 6px;
+	margin-top: 2px;
 	text-align: center; 
 }
 
 .li-stati {
 	width: 83px;
 	padding-left: 5px;
+	margin-top: 2px;
 	text-align: center; 
 }
 
 .li-kontakti {
 	width: 100px;
+	margin-top: 2px;
 	text-align: center; 
 }
 
@@ -818,8 +823,8 @@ padding-left: 52px;
 
 .header-wrapper-item {
 	float: left;
-	padding-left: 3px;
-	margin-top: 2px;
+	padding-left: 2px;
+	margin-top: 0px;
 	line-height: 25px;
 	font-family: "Lucida Sans Unicode";
 	font-size: 13px;
@@ -882,10 +887,12 @@ padding-left: 0;
 
 .text-tire_name {
 	padding-left: 12px;
+	padding-left: 4px;
+	padding-top: 2px;
 	font-family: "Lucida Sans Unicode";
 	font-size: 16px;
 	color: #206988;
-	letter-spacing: 0px;
+	letter-spacing: -0.4px;
 }
 
 .text-tire_name a {
@@ -896,8 +903,9 @@ padding-left: 0;
 }
 
 .text-tire_name2 {
-	padding-left: 10px;
-	margin-top: -3px;
+	/* padding-left: 8px; */
+	padding-left: 5px;
+	margin-top: -4px;
 	font-family: "Lucida Sans Unicode";
 	font-size: 13px;
 	color: #000000;
@@ -905,12 +913,37 @@ padding-left: 0;
 
 .image-tires {
 	margin-top: 5px;
+	/* margin-left: 2px; */
+	margin-left: 0px;
 }
 
 .goodeyar {
 	width: 137px;
 	height: 127px;
 	margin-bottom: 41px;
+	margin-left: 0;
+	background: #ffffff;
+	border-radius: 10px;
+	border: 1px solid #b0b9bc;
+	text-align: center;
+}
+
+.nokian {
+	width: 137px;
+	height: 127px;
+	margin-bottom: 41px;
+	margin-left: 0px;
+	background: #ffffff;
+	border-radius: 10px;
+	border: 1px solid #b0b9bc;
+	text-align: center;
+}
+
+.hankook {
+	width: 137px;
+	height: 127px;
+	margin-bottom: 41px;
+	margin-left: 0px;
 	background: #ffffff;
 	border-radius: 10px;
 	border: 1px solid #b0b9bc;
@@ -918,10 +951,20 @@ padding-left: 0;
 }
 
 .price {
-	padding-top: 5px;
-	padding-left: 17px;
+	padding-top: 2px;
+	padding-left: 11px;
 	font-family: Arial;
 	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	color: #114165;
+}
+
+.price_grn {
+	padding-top: 5px;
+	padding-left: 4px;
+	font-family: Arial;
+	font-size: 13px;
 	font-style: italic;
 	font-weight: bold;
 	color: #114165;
@@ -930,13 +973,36 @@ padding-left: 0;
 .second-column,
 .third-column {
 	float: left;
-	margin-left: 30px;
+	margin-left: 31px;
 	margin-top: 10px;
 	text-align: center;
 	width: 137px;
 	height: 624px;
 }
 
+.correction-position_2 {
+	margin-left: 2px;
+}
+
+.correction-position_-2 {
+	margin-left: -3px;
+}
+
+.correction-position_4 {
+	margin-left: 4px;
+}
+
+.correction-position_top-1 {
+	margin-top: -1px;
+}
+
+.correction-position_top-3 {
+	margin-top: -3px;
+}
+
+.correction-position_left-2 {
+	margin-left: -2px;
+}
 
 /* RIGHT BAR  */
 
@@ -1045,23 +1111,30 @@ input[type="submit"] {
 
 .box-for-tires {
 	float: left;
-	margin-top: 42px;
+	margin-top: 44px;
 	margin-left: 14px;
+}
+
+.box-for-tires_factory {
+	float: left;
+	margin-top: 41px;
+	margin-left: 11px;
 }
 
 /* FOOTER */
 
 footer {
-	width: 1000px;
-	height: 101px;
+	width: 909px;
+	height: 100px;
 	margin: 0 auto;
+	border: 1px solid #242c3e;
 	background: #213a4d;
 }
 
 .menu-footer {
 	height: 31px;	
-	padding-left: 343px;
-	padding-top: 10px;
+	padding-left: 298px;
+	padding-top: 9px;
 }
 
 .line-for-menu-footer {
