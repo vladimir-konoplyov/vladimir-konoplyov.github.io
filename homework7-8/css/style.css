@@ -37,7 +37,7 @@
 .header {
 	width: 100%;
 	height: 852px;
-	background: url(../img/background.jpg) no-repeat;
+	background: url(../img/background.jpg) top center no-repeat;
 }
 
 .main-box{
@@ -77,7 +77,9 @@
 
 .menu__item {
 	float: left; 
- 	margin-left: 51px;
+ 	/* margin-left: 51px; */
+margin-left: 61px;
+ 	margin-right: -10px;
 	font-size: 24px;
 	list-style: none;
 }
@@ -100,11 +102,21 @@
 /* SLIDER */
 
 .slider {
-	position: absolute;
-	top: 283px; 
-	width: 100%;
 	height: 400px;
-	background: rgba(0,0,0,0.3);
+	margin-top: 166px;
+	background: rgba(0,0,0, 0.3);
+}
+
+.slider-box{
+ 	position: relative;
+ 	margin: 0 auto;
+ 	max-width: 960px;
+}
+
+.slider-text-wrapper {
+	float: left;
+	height: 400px;
+	width: 55%;
 }
 
 .slider__header_1 {
@@ -127,7 +139,7 @@
 }
 
 .slider__text {
-	width: 51%;
+	width: 100%; 
 	overflow: hidden;
 	padding-top: 5px;
 	padding-left: 1px;
@@ -138,44 +150,38 @@
 	color: #ffffff;
 }
 
- .slider__image {
-	position: absolute;
-	top: -28px;
-	left: 59%;
-	z-index: 2;
-} 
+.slider-image-wrapper {
+  	float: left;
+ 	margin-top: -29px;
+ 	margin-left: 8%;
+}
 
 .slader__arrow_left {
 	position: absolute;
-	top: 200px;
-	left: 5%;
+	top: 425px;
+	left: 1%;
 	z-index: 3;
 }
 
 .slader__arrow_right {
 	position: absolute;
-	top: 200px;
-	right: 5%;
+	top: 425px;
+	right: 1%;
 	z-index: 3;
-}
-
-.slider-sprite-box {
-	background: red;
 }
 
 .slider-srite {
 	position: absolute;
-	top: 493px;
-	right: 311px;
+	bottom: -507px;
+	right: 140px; 
 	overflow: hidden;
-	z-index: 3;
+	z-index: 15;
 }
 
 .slider-srite__item {
 	float: left;
 	list-style: none;
 	margin-right: 5px;
-
 }
 
 .slider-srite__link {
@@ -201,7 +207,7 @@
 
 .main-box--modified_for_about_company {
 	padding-top: 76px;
- 	padding-left: 20px;
+ 	padding-left: 13px;
 }
 
 .column {
@@ -240,8 +246,8 @@
 
 .text_read_more {
 	float: right;
-	margin-top: 21px;
-	margin-right: 9px;
+	margin-top: -4px;
+	margin-right: 0px;
 	text-decoration: none;
 	font-family: "League Gothic", Tahoma, sans-serif;
 	font-size: 19px;
@@ -289,7 +295,6 @@
 	background-position: 28px 29px;
 }
 
-
 /* CENTRAL PART */
 
 .central_part {
@@ -304,7 +309,7 @@
 	float: left;
 	display: block;
 	margin-top: 100px;
-	margin-left: 25px;
+	margin-left: 26px;
 	width: 45%;
 	background: #ffffff;
 }
@@ -352,9 +357,8 @@
 	float: left;
 	display: block;
 	margin-top: 100px;
-	margin-left: 21px;
+	margin-left: 30px;
 	width: 49%;
-
 }
 
 .header_box_regent_updates {
@@ -396,7 +400,7 @@
 	position: absolute;
 	display: block;
 	top: 377px;
-	right: 13.5%;
+	right: 0%;
 	font-family: "League Gothic", Tahoma, sans-serif;
 	font-size: 18px;
 	text-decoration: none;
@@ -427,7 +431,7 @@
 .central_box_srite {
 	position: absolute;
 	top: 394px;
-	left: 27.5%;
+	left: 21%;
 	overflow: hidden;
 	z-index: 3;
 }
@@ -457,6 +461,7 @@
 	border-top: 1px solid #e6e6e6;
 	border-bottom: 1px solid #e6e6e6;
 }
+
 .logos__box {
 	margin-top: 24px;
 	margin-left: 10%;
@@ -483,7 +488,7 @@
 .logos__link3 {
 	display: block;
 	float: left;
-	margin-left: 7%;
+	margin-left: 8%;
 	width: 63px;
 	height: 65px;
 	background: url(../img/image_logos.png);
@@ -513,7 +518,7 @@
 .logos__link6 {
 	display: block;
 	float: left;
-	margin-left: 7%;
+	margin-left: 8%;
 	width: 79px;
 	height: 65px;
 	background: url(../img/image_logos.png);
@@ -676,7 +681,7 @@
 }
 
 .menu__item {
-	margin-left: 0;
+	margin-left: 1px;
 	margin-right: 51px;
 }
 
@@ -694,9 +699,21 @@
     float: left;
 }
 
+
+
 .slider {
-	top: 247px; 
-}  
+	/* top: 247px;  */
+	margin-top: 77px;
+} 
+
+.slider-text-wrapper {
+
+	margin-left: 20px;
+	margin-top: -3px;
+    float: left;
+    height: 400px;
+    width: 38%;
+}
 
 .slider__header_1 {
  	padding-top: 100px;
@@ -716,7 +733,7 @@
 }
 
 .slider__text {
-	width: 38%;
+	width: 95%;
 	height: 100px;
 	padding-top: 9px;
 	padding-left: 25px;
@@ -725,27 +742,32 @@
 	font-size: 16px;
 }
 
- .slider__image {
-	top: -31px;
-	left: 56.5%;
-} 
+.slider-image-wrapper {
+  	float: left;
+ 	margin-top: -35px;
+ 	margin-left: 16%;
+}
 
 .slader__arrow_left {
-	top: 185px;
+	top: 431px;
 	left: 0%;
 }
 
 .slader__arrow_right {
-	top: 185px;
+	top: 431px;
 	right: 0%;
 }
 
 .slider-srite {
-	top: 440px;
-	right: 16%;
+	top: 435px; 
+	right: 16%; 
 }
 
 /* About company - changed for 768-959px */
+
+.main-box--modified_for_about_company {
+	padding-left: 27px;
+}
 
 .header_about_company {
 	font-size: 24px;
@@ -869,6 +891,11 @@
 
 .logos__link4 {
 	margin-left: 10%;
+	margin-left: 9%;
+}
+
+.logos__link5 {
+	margin-left: 8%;
 }
 
 .logos__link6 {
@@ -884,11 +911,11 @@
 
 .copyright_box {
 	float: left;
-	width: 29%;
+	width: 30%;
 	height: 200px;
 	overflow: hidden;
 	margin-top: 102px;
-	margin-left: 2px;
+	margin-left: 0px;
 }
 
 .copyright_box__text {
@@ -986,7 +1013,7 @@
 /* Header - changed for 480-767px */
 
 .header {
-	height: 553px;
+	height: 551px;
 } 	
 
 .main-box {
@@ -1076,9 +1103,19 @@
 	border-top-right-radius: 10px; 
 }
 
+
+
 .slider {
-	top: 208px; 
-	height: 246px;
+	height: 347px;
+	margin-top: 88px;
+}
+
+.slider-text-wrapper {
+
+	margin-left: 12px;
+	margin-top: 0px;
+  	height: 246px;
+  	width: 48%;
 }
 
 .slider__header_1 {
@@ -1100,11 +1137,17 @@
 	display: none;
 }
 
+
+.slider-image-wrapper {
+	 float: left;
+	 margin-top: -17px;
+	 margin-left: 0%;
+}
+
+
  .slider__image {
 	width: 223px;
 	height: 287px;
-	top: -17px;
-	left: 49.5%;
 } 
 
 .slider-srite {
@@ -1113,19 +1156,24 @@
 }
 
 .slader__arrow_left {
-	top: 106px;
+	top: 315px;
 	left: 0%;
 }
 
 .slader__arrow_right {
-	top: 106px;
+	top: 315px;
 	right: 0%;
 }
 
 /* About company - changed for 480-767px*/
 
 .about_company {
+
 	height: 596px;
+}
+
+.main-box--modified_for_about_company {
+	width: 94%;	
 }
 
 .column {
@@ -1135,6 +1183,21 @@
 	margin-bottom: 66px;
 }
 
+#column1 {
+	margin-top: 3px;
+	margin-left: -5px;
+}
+
+#column2 {
+	margin-top: -5px;
+	margin-left: -5px;
+}
+
+#remove_right_margin {
+	margin-top: -5px;
+	margin-left: -5px;
+}
+
 .header_about_company {
 	font-size: 24px;
 }
@@ -1142,12 +1205,14 @@
   .text_about_company {
   	width: 88%;
    	height: 70px;
+   	padding-top: 3px;
+	padding-left: 54px;
 }  
 
  .text_read_more {
 	overflow: hidden;
 	margin-top: 18px;
-	margin-right: 0px;	
+	margin-right: -9px;	
 } 
 
 /* Central part - changed for 480-767px */
@@ -1281,7 +1346,7 @@
 	height: 133px;
 	overflow: hidden;
 	margin-top: 80px;
-	margin-left: 0px;
+	margin-left: 9px;
 }
 
 .copyright_box__text {
@@ -1302,7 +1367,7 @@
 	height: 133px;
 	overflow: hidden;
 	margin-top: 53px;
-	margin-left: 0;
+	margin-left: 9px;
 }
 
 .new_categories_box {
@@ -1311,7 +1376,7 @@
 	height: 133px;
 	overflow: hidden;
 	margin-top: 53px;
-	margin-left: 0;
+	margin-left: 9px;
 }
 
 .copyright_box__header {
@@ -1383,9 +1448,9 @@
 .text_designed {
 	float: none;	
 	clear: both;
-	margin-top: 10px;
+	margin-top: 102px;
 	margin-right: 0px;
-	margin-left: 40%;
+	margin-left: 35%;
 }
 
 .menu--modified:hover {
@@ -1423,9 +1488,22 @@
 	width: 95%;
 }
 
+
 .slider {
+	height: 310px;
 	background: none;
 }
+
+.slider-text-wrapper {
+
+	margin-left: 0;
+	margin-top: 0;
+	margin: 0 auto;
+  	float: none;
+  	height: 246px;
+  	width: 70%;
+}
+
 .slider__header_1 {
 	 text-align: center; 
 }
@@ -1444,19 +1522,24 @@
 }
 
 .slader__arrow_left {
-	top: 106px;
-	left: 0%;
+	top: 313px;
+	left: 2%;
 }
 
 .slader__arrow_right {
-	top: 106px;
-	right: 0%;
+	top: 313px;
+	right: 2%;
 }
 
 /* About company - changed for 320-480px*/
 
 .about_company {
 	height: 596px;
+}
+
+.main-box--modified_for_about_company {
+width: 84%;
+	
 }
 
 .column {

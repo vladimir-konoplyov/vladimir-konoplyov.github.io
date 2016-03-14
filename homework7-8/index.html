@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="wrapper">
+	<div class="wrapper">
 		<!-- HEADER -->
 		<div class="header">
 			<div class="main-box">
@@ -38,37 +38,38 @@
 				</ul>
 			</div>
 			<!-- SLIDER -->
-			<aside class="slider">
-				<div class="main-box">
-					<p class="slider__header_1">Lorem Ipsum Dolor</p> 
-					<p class="slider__header_2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
-					<p class="slider__text">Semper sollicitudin gravida eget, ves&shy;tibulum sit amet sapien. Nunc dignis&shy;sim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>				
-					<img class="slider__image" src="img/image-phone.png" alt="">
-					<a class="slader__arrow_left"  href="#">
-						<img src="img/image-slider-strelka-left.png" alt="">
-					</a>		
-					<a class="slader__arrow_right"  href="#">
-						<img src="img/image-slider-strelka-right.png" alt="">
-					</a>
-					<ul class="slider-srite">
-						<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
-						<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
-						<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
-						<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
-					</ul>
-				</div>
-			</aside>
-		</header>
+			
+			<div class="slider">
+				<a class="slader__arrow_left"  href="#"><img src="img/image-slider-strelka-left.png" alt=""></a>
+				<a class="slader__arrow_right"  href="#"><img src="img/image-slider-strelka-right.png" alt=""></a>
+      			<div class="slider-box">
+       				<div class="slider-text-wrapper">      
+          				<p class="slider__header_1">Lorem Ipsum Dolor</p> 
+          				<p class="slider__header_2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+						<p class="slider__text">Semper sollicitudin gravida eget, ves&shy;tibulum sit amet sapien. Nunc dignis&shy;sim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>	
+        			</div>
+	        		<div class="slider-image-wrapper">
+	          			<a href="#"><img class="slider__image" src="img/image-phone.png"></a>
+	        		</div>
+        			<ul class="slider-srite">
+        				<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
+        				<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
+        				<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
+        				<li class="slider-srite__item"><a class="slider-srite__link" href=""></a></li>
+        			</ul>
+      			</div>      				
+    		</div>
+		</div>	
 		<!-- BOX ABOUT COMPANY -->
 		<aside class="about_company">
 			<div class="main-box main-box--modified_for_about_company">
-				<div class="column">
+				<div class="column" id="column1">
 					<a class="icon_key" href=""></a>
 					<p class="header_about_company">ABOUT OUR COMPANY</p>						
 					<p class="text_about_company">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam </p>
 					<p><a class="text_read_more" href="">READ MORE</a></p>
 						</div>
-				<div class="column">			
+				<div class="column" id="column2">			
 					<a class="icon_cloud" href=""></a>	
 					<p class="header_about_company">ABOUT OUR COMPANY</p>
 					<p class="text_about_company">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam </p>
@@ -192,7 +193,7 @@
 					<span class="second_text_designed">Pingbull AS</span>				
 				</div>				
 			</div>
-		</footer>		
+		</footer>			
 	</div>	<!-- END OF WRAPPER -->
 </body>
 </html>
