@@ -245,7 +245,7 @@
 
 .text_read_more {
 	float: right;
-	margin-top: 21px;
+	margin-top: -1px;
 	margin-right: 0px;
 	text-decoration: none;
 	font-family: "League Gothic", Tahoma, sans-serif;
