@@ -15,8 +15,8 @@ function pow() {
     var result, convertExp;
     var numExp = 1;
 
-    // Проверяем, евляются ли число и степень числом; не введено ли пустое значение; являются ли число и стерень целым числом
-    if (isNaN(num / 2) || isNaN(exponent / 2) || (num =='') || (exponent == '') || Number.isInteger(num) == false || Number.isInteger(exponent) == false) {
+    // Проверяем, евляются ли число и степень числом; не введено ли пустое значение;
+    if (isNaN(num / 2) || isNaN(exponent / 2) || (num =='') || (exponent == '')) {
         return result = 'ATTENTION! You entered not integer number! Please, reload this page and enter correct number.';
     } else {
         if (exponent === 0) {
