@@ -1,4 +1,5 @@
 // Задача 1. Возведение числа в степень
+
 console.log('TASK 1.');
 
 var num = prompt('Enter integer number: ', '');
@@ -14,8 +15,9 @@ function pow() {
     var result, convertExp;
     var numExp = 1;
 
-    if (isNaN(num / 2) || isNaN(exponent / 2) || (num =='') || (exponent == '')) {
-        return result = 'ATTENTION! You entered not a number! Please, reload this page and enter correct number.';
+    // Проверяем, евляются ли число и степень числом; не введено ли пустое значение; являются ли число и стерень целым числом
+    if (isNaN(num / 2) || isNaN(exponent / 2) || (num =='') || (exponent == '') || Number.isInteger(num) == false || Number.isInteger(exponent) == false) {
+        return result = 'ATTENTION! You entered not integer number! Please, reload this page and enter correct number.';
     } else {
         if (exponent === 0) {
             numExp = 1;
@@ -36,34 +38,6 @@ function pow() {
 }
 
 // Задача 2. Поиск совпадений введенного имени с именами в массиве
-// console.log('TASK2.');
-
-// var arr = [];
-
-// for (var i = 0; i <= 4; i++) {
-//     arr[i] = prompt('Введите 5 имен: ', '');
-// }
-
-// var enteredName = prompt('Введите Ваше имя: ', '');
-// var proverka;
-
-// console.log('Введенные имена: ', arr);
-// console.log('Ваше имя: ', enteredName);
-
-//  for (var j = 0; j <= 4; j++) {
-//     if ((arr[j] == enteredName) && (arr[j] != '')) {
-//         alert(arr[j] + ', вы успешно вошли');
-//         proverka = true;
-//         break;
-//     }
-//  }
-
-//  if (proverka != true) {
-//     alert('ОШИБКА! Введенное имя не совпадает с существующими именами, либо введено пустое имя!');
-//  }
-
-
-
 
 console.log('TASK2.');
 
