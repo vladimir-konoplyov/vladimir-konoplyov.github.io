@@ -3,6 +3,12 @@ console.log('TASK 1.');
 
 var num = prompt('Enter integer number: ', '');
 var exponent = prompt('Enter exponent: ', '');
+var numberInExponent = pow();
+
+console.log('Entered number:', num);
+console.log('Entered exponent:', exponent);
+console.log('RESULT = ', numberInExponent);
+console.log('_________________________________');
 
 function pow() {
     var result, convertExp;
@@ -29,36 +35,75 @@ function pow() {
     return result = numExp;    
 }
 
-var numberInExponent = pow();
-
-console.log('Entered number:', num);
-console.log('Entered exponent:', exponent);
-console.log('RESULT = ', numberInExponent);
-console.log('_________________________________');
-
 // Задача 2. Поиск совпадений введенного имени с именами в массиве
+// console.log('TASK2.');
+
+// var arr = [];
+
+// for (var i = 0; i <= 4; i++) {
+//     arr[i] = prompt('Введите 5 имен: ', '');
+// }
+
+// var enteredName = prompt('Введите Ваше имя: ', '');
+// var proverka;
+
+// console.log('Введенные имена: ', arr);
+// console.log('Ваше имя: ', enteredName);
+
+//  for (var j = 0; j <= 4; j++) {
+//     if ((arr[j] == enteredName) && (arr[j] != '')) {
+//         alert(arr[j] + ', вы успешно вошли');
+//         proverka = true;
+//         break;
+//     }
+//  }
+
+//  if (proverka != true) {
+//     alert('ОШИБКА! Введенное имя не совпадает с существующими именами, либо введено пустое имя!');
+//  }
+
+
+
+
 console.log('TASK2.');
 
+var enteredName, nameOutput, message;
 var arr = [];
 
-for (var i = 0; i <= 4; i++) {
-    arr[i] = prompt('Введите 5 имен: ', '');
-}
+inputName();
 
-var enteredName = prompt('Введите Ваше имя: ', '');
-var proverka;
+enteredName = prompt('Введите Ваше имя: ', '');
+
+nameOutput = checkName(enteredName);
 
 console.log('Введенные имена: ', arr);
-console.log('Ваше имя: ', enteredName);
+console.log('Ваше имя: ', nameOutput);
 
- for (var j = 0; j <= 4; j++) {
-    if ((arr[j] == enteredName) && (arr[j] != '')) {
-        alert(arr[j] + ', вы успешно вошли');
-        proverka = true;
-        break;
+alert(message);
+
+function inputName() {
+    for (var i = 0; i <= 4; i++) {
+    arr[i] = prompt('Введите 5 имен: ', '');
     }
- }
+}
+    
+function checkName (name) {   
+    var name, nameChecked, proverka;
+ 
+    for (var j = 0; j <= 4; j++) {
+        
+        if ((arr[j] == name) && (arr[j] != '')) {            
+            nameChecked = arr[j];
+            message = arr[j] + ', вы успешно вошли';
+            proverka = true;
+            break;
+        } else if (proverka != true) {
+                message = 'ОШИБКА! Введенное имя не совпадает с существующими именами, либо введено пустое имя!';
+                nameChecked = name;
+                }
+    }
 
- if (proverka != true) {
-    alert('ОШИБКА! Введенное имя не совпадает с существующими именами, либо введено пустое имя!');
- }
+    return nameChecked;
+}
+
+
