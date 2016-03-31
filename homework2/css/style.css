@@ -1,0 +1,73 @@
+body {
+	padding: 0;
+	margin:  0;
+	background-color: #E6E6E6;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	font-family: serif;
+}
+
+ul {
+	padding: 0 0 0 30px;
+}
+
+.maket {
+	margin: 0 auto;
+	width: 450px;
+	height: 650px;
+	background-color: white;
+	border: 2px solid #D8D8D8;
+}
+
+.text-header {
+	padding: 35px 0 15px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.image-center {
+	margin-bottom: 5px;
+	text-align: center;
+	}
+
+.text-specialty {
+	margin-left: 10px;
+	padding: 0 0 12px 0;
+}
+
+.line-bottom {
+	margin-left: 30px;
+	margin-right: 30px;
+	border-bottom: 2px solid #D8D8D8;
+}
+
+.text-motivation {
+	margin-top: 17px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.text-box {
+	margin-top: 17px;
+}
+
+.text-in-box {
+	margin-left: 40px;
+}
+
+
+.text-vkontakte {
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+.link_vkontakte {
+	margin-left: 10px;
+	padding-bottom: 12px;
+}
+
+
