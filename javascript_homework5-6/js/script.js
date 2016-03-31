@@ -4,8 +4,7 @@ var buttonReset= document.getElementById('button-reset');
 
 var timeShow = document.querySelector('.time-show');
 
-// var timerId; // Идентификатор таймера
-var tId; // Идентификатор таймера
+var timerId; // Идентификатор таймера
 
 var clickCounter = 0; // Счетчик кликов на кнопку Start/Stop
 
@@ -25,7 +24,7 @@ function startTimerButton() {
 
     // Если значение счетчика четное, останавляиваем таймер, выводим значение таймера и меняем название кнопки на Start
   } else if (clickCounter % 2 == 0) {
-      clearTimeout(tId);
+      clearTimeout(timerId);
 
       clickShowTimeCount++;
 
@@ -76,7 +75,7 @@ function startTimerButton() {
         }
       }   
     timer.innerHTML = h + ':' + m + ':' + s + '.' + ms;
-    tId = setTimeout(workTimer, 9);
+    timerId = setTimeout(workTimer, 9);
   }
 
 
@@ -103,7 +102,7 @@ function splitTimerButton() {
 
 function resetTimerButton() {
 
-  clearTimeout(tId);
+  clearTimeout(timerId);
 
   ms = s = m = h = '00';
 
