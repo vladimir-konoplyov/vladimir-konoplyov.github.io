@@ -62,6 +62,7 @@ h1 {
 	background: linear-gradient(to bottom, #494949, #2f2f2f);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+/* 	border-radius: 20px; */
 }
 
 .sidebar {
