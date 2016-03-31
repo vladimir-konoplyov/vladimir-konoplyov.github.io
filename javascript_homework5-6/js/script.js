@@ -76,7 +76,8 @@ function startTimerButton() {
       }   
     timer.innerHTML = h + ':' + m + ':' + s + '.' + ms;
     timerId = setTimeout(workTimer, 9);
-  }
+
+   }
 
 
 function splitTimerButton() {
@@ -113,9 +114,6 @@ function resetTimerButton() {
   clickShowTimeCount = 0;
   clickCounter = 0;
 }
-
-console.log('clickCounter Degault = ', clickCounter)
-
 
 buttonStart.addEventListener('click', startTimerButton);
 buttonStop.addEventListener('click', splitTimerButton);
