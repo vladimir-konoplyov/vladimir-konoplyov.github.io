@@ -1,0 +1,213 @@
+/* Carousel */
+
+.jcarousel-wrapper {
+    margin: 25px auto;
+    width: 500px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 2px #120d51;
+    border-radius: 10px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    width: 500px;
+}
+
+.jcarousel li img {
+    width: 100%;
+    height: 275px;    
+}
+
+.jcarousel-prev {
+    display: inline-block;
+    margin-right: 10%;
+    color: #120d51;
+}
+
+.jcarousel-next {
+  display: inline-block;
+  margin-left: 10%;
+  color: #120d51;
+}
+
+.jcarousel-pagination {
+    display: inline-block;
+}
+
+.jcarousel-pagination a {
+    padding: 0 5px;
+}
+
+.box-pagination {
+    text-align: center;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;    
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;    
+    background: #fff;
+    color: blue;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;    
+    margin-right: 2px;    
+    opacity: 0.75;
+}
+
+.jcarousel-pagination a.active {
+    background: #120d51;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+/* CSS Checkbox */
+
+.wrapper-checkbox-select {
+    float: left;
+}
+
+.label-checkbox {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.label-checkbox:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #cfe2f3;
+    border: 2px solid #120d51;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .label-checkbox:before {
+    content: "\2713";
+    font-size: 15px;
+    content: #000000;
+    text-align: center;
+    line-height: 13px;
+}
+
+/* jQuery Checkbox */
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png);
+}
+
+.niceCheck input {
+    display: none;`
+}
+
+/* Menu */
+
+.menu-box {
+    margin-top: 30px;    
+}
+
+.menu {   
+    margin: 0 auto;
+    width: 600px;    
+    height: 35px;
+    background: #120d51;
+    line-height: 35px;
+}
+
+.menu  li  {
+    position: relative;
+    display: inline-block;
+    list-style: none;   
+}
+
+/* Sub-menu */
+
+.menu ul {
+    position: absolute;
+    display: none;
+}
+
+.menu li ul {
+    background: #120d51;
+    position: absolute;
+    width: 80px;
+}
+
+.menu li li {
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+.menu li li ul {
+    position:absolute;
+    top:0;
+    left:80px;
+    margin:0;
+}
+
+.menu  a {
+    display: block;
+    line-height: 35px;
+    margin: 0 15px 0 15px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    color: yellow;
+}
+
+.menu li li a {
+    margin-left: -30px;
+    text-align: center;
+    border-bottom:solid 1px grey;
+    padding:0;
+}
+
+.menu li li:last-child a {
+    border-bottom:none;
+}
+
+.menu .sub-menu {
+    display:none;
+}
+
+
