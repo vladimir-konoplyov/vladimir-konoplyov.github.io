@@ -1,0 +1,119 @@
+h1 {
+	text-align: center;
+	font-family: 'Open Sans', Arial, Tahoma;
+	font-size: 25px;
+}
+
+p, li, a {
+	font-family: 'Open Sans', Arial, Tahoma;
+}
+
+.carousel-wrapper {
+	margin: 0 auto;
+    text-align: center;
+	width: 1025px;
+	overflow: hidden;
+}
+
+.carousel-hider {
+    width: 860px;
+    height: 210px;
+    overflow: hidden;
+    margin: 0 auto;
+    float: left;
+}
+
+.carousel-list {   
+	position: relative; 
+    list-style: none;
+    width: 10000px;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 35px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 250px;
+}
+
+.element-position {
+	text-align: center;
+    width: 75%;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    padding: 5px;
+    margin-top: 75px;
+    font-family: 'Open Sans', Arial, Tahoma;
+    font-size: 13px;
+    border: 1px solid grey;
+    background-color: #836FFF;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: #473C8B;
+    color: #ffffff;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.output-wrapper {
+    display: none;
+	margin: 30px auto;
+	padding: 30px 0;
+	width: 40%;
+	border: 1px solid #473C8B;
+    box-shadow: 0 0 10px #473C8B;
+}
+
+.image-output {
+	text-align: center;
+}
+
+.content-output {
+	margin-left: 25px;
+}
+
+.box-line {
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: 2px solid grey;
+}
+
+.button-refer-position {
+    margin: 50px;
+    text-align: center;
+}
+
+.button-refer {
+    width: 300px;
+    height: 50px;
+    background: #836FFF;
+    border: 1px solid grey;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-refer:hover {
+    background: #473C8B;
+    color: #ffffff;
+}
+
+.line {
+    border-bottom: 1px solid #473C8B;
+    width: 90%;
+    margin: 0 auto;
+}
