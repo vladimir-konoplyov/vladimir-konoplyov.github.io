@@ -73,7 +73,7 @@ $(function() {
         console.log('Правильных ответов: ', markPositive);
         console.log('Не правильных ответов: ', markNegative);
 
-        $('.modal-window').slideDown('slowly');
+        $('.modal-window').fadeIn('slowly');
 
         $('div.modal-window__result-here').append(answerResult);
 
