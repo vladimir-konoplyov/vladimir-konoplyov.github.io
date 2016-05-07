@@ -1,0 +1,82 @@
+ul {
+    margin-left: 50px;
+}
+
+.image-output {
+    width: 150px;
+    padding: 20px;
+}
+
+.output-items {
+    list-style: none;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+.search-logo-position {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.word-image,
+.word-gif,
+.letter-1,
+.letter-2,
+.letter-3,
+.letter-4,
+.letter-5,
+.letter-6 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.word-image {
+     color: green;
+}
+
+.word-gif {
+    color: red;
+}
+
+.letter-1,
+.letter-4 {
+    color: blue;
+}
+
+.letter-2,
+.letter-6 {
+    color: red;
+}
+
+.letter-3 {
+    color: orange;
+}
+
+.letter-5 {
+    color: green;
+}
+
+.search-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-form__input {
+    width: 500px;
+    height: 25px;
+}
+
+.search-form__submit {
+    margin-left: 10px;
+    width: 100px;
+    height: 33px;
+    color: blue;
+    border: 1px solid blue;
+}
+
+.search-form__submit:hover {
+    background: grey;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
