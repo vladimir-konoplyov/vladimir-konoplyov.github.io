@@ -23,14 +23,6 @@ module.exports = function(grunt) {
         dest: 'js/dest/script.min.js'
       }
     },
-  //  cssmin: {
-  //   target: {
-  //     files: [{
-  //         'css/dest/style.min.css': ['css/src/style.min.css']
-  //     }]
-  //   }
-  // }
-
     cssmin: {
       target: {
         files: [{
