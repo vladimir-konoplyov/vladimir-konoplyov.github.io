@@ -32,7 +32,7 @@ $(function() {
 });
 
 // PROTOTIPE OOP
-function human() {
+function Human() {
     this.name = 'Petya';
     this.age = '30';
     this.sex = 'male';
@@ -40,7 +40,7 @@ function human() {
     this.weight = '80 kg';
 }
 
-function worker() {
+function Worker() {
     this.placeOfJob = 'IBM';
     this.salary = '1000$';
     this.doWork = function() {
@@ -48,7 +48,7 @@ function worker() {
     }
 }
 
-function student() {
+function Student() {
     this.placeOfStudy = 'Lviv National University of Ivan Franko';
     this.scholarship = '100$';
     this.watchSoapOpera = function() {
@@ -56,25 +56,25 @@ function student() {
     }
 }
 
-worker.prototype = new human();
-student.prototype = new human();
+Worker.prototype = new Human();
+Student.prototype = new Human();
 
-var worker1 = new worker();
-console.log('Worker1 place of job: ', worker1.placeOfJob);
-console.log('Worker1 salary: ', worker1.salary);
-console.log('Worker1 age: ', worker1.age);
-console.log('Worker1 height: ', worker1.height);
-console.log('Worker1 weight: ', worker1.weight);
+var Worker1 = new Worker();
+console.log('Worker1 place of job: ', Worker1.placeOfJob);
+console.log('Worker1 salary: ', Worker1.salary);
+console.log('Worker1 age: ', Worker1.age);
+console.log('Worker1 height: ', Worker1.height);
+console.log('Worker1 weight: ', Worker1.weight);
 console.log('---------------------------------------------------');
 
-var student1 = new student();
-console.log('Student1 name: ', student1.name);
-console.log('Student1 weight: ', student1.weight);
-console.log('Student1 place of study: ', student1.placeOfStudy);
+var Student1 = new Student();
+console.log('Student1 name: ', Student1.name);
+console.log('Student1 weight: ', Student1.weight);
+console.log('Student1 place of study: ', Student1.placeOfStudy);
 console.log('---------------------------------------------------');
 
-var student2 = new student();
-console.log('Student2 sex: ', student2.sex);
-console.log('Student2 height: ', student2.height);
-console.log('Student2 age: ', student2.age);
-console.log('Student2 scholarship: ', student2.scholarship);
+var Student2 = new Student();
+console.log('Student2 sex: ', Student2.sex);
+console.log('Student2 height: ', Student2.height);
+console.log('Student2 age: ', Student2.age);
+console.log('Student2 scholarship: ', Student2.scholarship);
