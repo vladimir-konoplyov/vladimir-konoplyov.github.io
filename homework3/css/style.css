@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+p, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+ 	margin: 50px 0 40px 0px;
+	font-family: "OpenSans", Arial;
+	font-size: 40px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding-left: 46px;
+	padding-right: 46px;
+	width: 966px;
+	height: auto;
+	background: #ffffff;
+	border: 2px solid #dbdbdb;
+}
+
+ .main-menu {
+ 	margin: 0;
+	padding: 0;
+	width: 966px;
+	height: 40px;
+	background: linear-gradient(to bottom, #5e5e5e, #444343);	
+} 
+
+ .main-menu li {
+ 	display: inline-block;
+	width: 120px;	
+	font-family: "OpenSans", Arial;
+	font-size: 14.67px;
+	line-height: 40px;
+	text-align: center;
+}
+
+ .main-menu li a {
+ 	color: white;
+ 	text-decoration: none;
+}
+
+ #left  {
+ 	display: inline-block;
+ 	text-align: left; 
+ } 
+
+ #left > a  {
+	padding-left: 24px;
+} 
+
+.main-menu li a:hover,
+.main-menu li:hover > a {
+	display: block;
+	background: linear-gradient(to bottom, #494949, #2f2f2f);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+/* 	border-radius: 20px; */
+}
+
+.sidebar {
+	width: 240px;
+	float: left;
+}
+
+.left-menu {
+	padding: 0;
+	margin: 40px 0 0 0;
+/* 	width: 240px; */
+	height: 246px;
+	list-style: none;
+	border-top: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+}
+
+.left-menu li {
+	display: block;
+	line-height: 40px;
+	height: 40px;
+	font-family: "OpenSans", Arial;
+	font-size: 13.33px;
+	border-bottom: 1px solid #c8c8c8;	
+}
+
+.left-menu li a {
+	color: black;
+	text-decoration: none;
+	padding-left: 24px; 
+}
+ 
+.left-menu li a:hover,
+.left-menu li:hover > a {
+	display: block;
+	background: #f9f9f9;
+	padding-left: 36px;		
+} 
+
+.box-content {
+	display: inline-block;
+	width: 678px;
+	margin-top: 40px;
+	margin-left: 48px;
+	border: 1px #c8c8c8;
+}
+
+.content-text {
+	padding: 40px 0 0 24px;
+	font-family: "OpenSans", Arial;
+	font-size: 13.33px;
+}
+
+.footer-box { 	
+ 	margin: 60px 0 60px 0;
+ 	width: 966px;
+ 	height: 40px;
+ 	background: #e1e1e1; 
+ }
+
+ .footer-menu {
+	margin: 0;
+	padding: 0 0 0 0;
+} 
+
+ .footer-menu li {
+ 	display: inline-block;
+	width: 120px;	
+	font-family: "OpenSans", Arial;
+	font-size: 13.33px;
+	line-height: 40px;
+	text-align: center;
+}
+
+ .footer-menu li a {
+ 	color: #2c2c2c;
+ 	text-decoration: none;
+}
+
+.footer-menu li a:hover {
+	text-decoration: underline;
+}
+
+.foter-menu-item {
+	display: inline-block;
+	float: left;
+}
+
+.coyright-text {
+	padding-right: 20px;
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	font-family: "OpenSans", Arial;
+	font-size: 13.33px;	
+}
+
+
+
+
+	 
