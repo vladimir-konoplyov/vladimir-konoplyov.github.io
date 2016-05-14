@@ -1,7 +1,7 @@
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	min-width: 320px;	
+	/*min-width: 320px;	*/
 }
 
 .main-box {
@@ -123,6 +123,16 @@ header {
 	background: linear-gradient(to bottom, #0653af, #1b68c4 );
 }
 
+.text-central {
+	padding: 20px;
+	text-align: left;
+	line-height: 25px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	color: white;
+
+}
+
 .image-slider {
 	width: 100%;
 }
@@ -204,6 +214,7 @@ footer {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+
 
 /*MEDIA QUERIES*/
 
