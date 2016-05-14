@@ -1,0 +1,283 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 320px;	
+}
+
+.main-box {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+}
+
+/* HEADER*/
+
+header {
+	margin-bottom: 15px;
+}
+
+.logo-position {
+	float: left;
+	margin-left: 3%;
+}
+
+.image-lang {
+	position: relative;
+	top: 30px;
+	margin-right: 2%;
+	display: block;
+	text-align: right;
+}
+
+.image-lang img {
+	width: 25px;
+
+}
+
+.menu {
+	float: right;
+	margin-right: 2%;
+	padding-top: 40px;
+}
+
+.menu li {
+	float: left;
+	padding-left: 21px;
+}
+
+.menu li a {
+	display: block;
+	line-height: 1.2em;
+	color: #bbb;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: -1px;
+	height: 79px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.menu li a:hover {
+	color: #b71571;
+}
+
+.menu li a span {
+	font-size: 13px;
+	line-height: 1.2em;
+	color: #666;
+	display: block;
+	letter-spacing: -1px;
+	margin-top: -3px;
+	font-weight: normal;
+}
+
+.link1,
+.link2  {
+	background: url(../images/menu_icon1.gif) bottom center no-repeat;
+}
+
+.link1:hover,
+.link2:hover {
+	background: url(../images/menu_icon1_active.gif) bottom center no-repeat;
+}
+
+.link3  {
+	background: url(../images/menu_icon3.gif) bottom center no-repeat;
+}
+
+.link3:hover {
+	background: url(../images/menu_icon3_active.gif) bottom center no-repeat;
+}
+
+.link4  {
+	background: url(../images/menu_icon4.gif) bottom center no-repeat;
+}
+
+.link4:hover {
+	background: url(../images/menu_icon4_active.gif) bottom center no-repeat;
+}
+
+.link5  {
+	background: url(../images/menu_icon5.gif) bottom center no-repeat;
+}
+
+.link5:hover {
+	background: url(../images/menu_icon5_active.gif) bottom center no-repeat;
+}
+
+.link6  {
+	background: url(../images/menu_icon6.gif) bottom center no-repeat;
+}
+
+.link6:hover {
+	background: url(../images/menu_icon6_active.gif) bottom center no-repeat;
+}
+
+/* CENTRAL PART*/
+
+.central-part {
+	width: 100%;
+	text-align: center;
+	background: linear-gradient(to bottom, #0653af, #1b68c4 );
+}
+
+.image-slider {
+	width: 100%;
+}
+
+/* MAIN */
+
+main {
+	height: 285px;
+}
+
+.main-box--modified-for-central-part {
+	text-align: center;
+}
+
+.box-info {
+	display: inline-block;
+	width: 32%;
+}
+
+/*.box-info:first-child {
+	margin-left: 2%;
+}*/
+
+.box-info__header {
+	padding:43px 0 15px 0;
+	line-height: 1.2em;
+	color: #696969;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.box-info__link,
+.box-info__text {
+	padding-top: 10px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+	text-decoration: none;
+    color: #696969;;
+}
+
+.box-info__link:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.box-info__image {
+	margin-right: 10px;
+}
+
+/* FOOTER */
+
+footer {
+	overflow: hidden;
+	padding: 34px 0;
+	background: grey;
+}
+
+.footer__text {
+	text-align: center;
+}
+
+.footer__link {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	color: white;
+}
+
+.footer__link:hover {
+	text-decoration: none;
+	color: #b71571;
+}
+
+.footer__text-copyright,
+.footer__text-designed {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 910px) {
+
+.logo-position {
+    float: none;
+    display: block;
+    margin-left: 3%;
+}
+
+.menu {
+	float: none;
+	display: block;
+	overflow: hidden;
+	margin-right: 3%;
+	margin-left: 3%;
+	padding-top: 25px;
+}
+
+}
+
+@media (max-width: 731px) {
+
+main {
+	height: auto;
+	margin-bottom: 25px;
+}
+
+.logo-position {
+    float: none;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+}
+
+.menu {
+	overflow: hidden;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 20px;
+}
+
+.menu li {
+	float: none;
+	padding-left: 0;
+}
+
+.menu li a {
+	display: block;
+	text-align: center;
+	height: 30px;
+}
+
+.menu li a span {
+	display: inline-block;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+.link1, .link1:hover,
+.link2, .link2:hover,
+.link3, .link3:hover,
+.link4, .link4:hover,
+.link5, .link5:hover,
+.link6, .link6:hover  {
+	background: none;
+}
+
+.box-info {
+	display: block;
+	width: 90%;
+	text-align: center;
+}
+
+}
+
+
