@@ -199,6 +199,7 @@ footer {
 }
 
 .footer__text-copyright,
+.footer__text-reserved,
 .footer__text-designed {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -276,6 +277,15 @@ main {
 	display: block;
 	width: 90%;
 	text-align: center;
+}
+
+}
+
+@media (max-width: 580px) {
+
+.footer__text-reserved {
+	display: block;
+	padding: 10px 0;
 }
 
 }
