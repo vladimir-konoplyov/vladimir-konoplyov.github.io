@@ -309,6 +309,9 @@ ul.fontawesome .search-icon:before {
   float: left;
   margin-right: 3%; }
 
+.services-box__image-container a {
+  text-decoration: none; }
+
 .services-box__image-container:last-child {
   float: left;
   margin-right: 0; }
