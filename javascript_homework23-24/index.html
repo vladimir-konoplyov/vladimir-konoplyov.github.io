@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork 23-24 MVC</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h2 class="first-header">JS HomeWork 23-24</h2>
+    <h2 class="second-header">ToDo-list:</h2>
+    <script type="text/template" id="wrapper-temlate">
+    <div class="wrapper">
+        <ul class="item-list">
+        </ul>
+        <div class="conrolls">
+            <input type="text" class="item-value">
+            <button class="item-add">Add</button>
+            <button class="item-confirm">Confirm changes</button>
+        </div>
+        <div class="instructions">
+        </div>
+    </div>  
+    </script>
+    <script type="text/template" id="list-temlate">
+    <%  for (var i = 0; i < data.length; i++) { %>        
+        <li data-index="<%= i %>" class="list-item"><%= data[i] %> 
+            <button  class="item-change">Change</button>
+            <button data-value="<%= data[i] %>" class="item-delete">Remove</button>
+        </li>
+    <% }; %>
+    </script>
+
+</body>
+</html>

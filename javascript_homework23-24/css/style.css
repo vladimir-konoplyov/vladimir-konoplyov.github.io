@@ -1,0 +1,117 @@
+.first-header,
+.second-header {
+    font-family: Verdana;
+    text-align: center;
+    font-size: 30px;
+}
+
+.first-header {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.second-header {
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.item-list,
+.conrolls {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: #2a2d32;
+}
+
+.item-list {
+    position: relative;
+    padding: 25px 20px;
+    width: 400px;
+}
+
+.conrolls {
+    padding-bottom: 25px;
+    width: 440px;
+}
+
+.item-list li {
+    display: block;
+    overflow: hidden;
+    max-width: 200px;
+    margin-top: 10px;
+    text-align: left;
+    list-style: none;
+    font-family: Verdana;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.item-add,
+.item-change,
+.item-delete,
+.item-confirm {
+    padding: 3px 10px;
+    background: #35383c;
+    border: 1px solid #000000;
+    color: grey
+}
+
+.item-add:hover,
+.item-change:hover,
+.item-delete:hover
+ {
+    border: 1px solid #f4b60d;
+    box-shadow: 0 0 5px #f4b60d;
+    outline: none; 
+}
+
+.item-confirm:hover {
+    border: 1px solid green;
+    box-shadow: 0 0 5px green;
+    outline: none; 
+}
+
+.item-value {
+    border: 1px solid #000000;
+    outline: none; 
+    background: grey;
+}
+
+.item-value:focus {
+    border: 1px solid #f4b60d;
+    box-shadow: 0 0 5px #f4b60d;
+}
+
+.item-add:focus,
+.item-change:focus,
+.item-delete:focus,
+.item-confirm:focus {
+    outline: none;  
+}
+
+.item-delete {
+    position: absolute;
+    right: 25px;
+}
+
+.item-change {
+    position: absolute;
+    right: 95px ;
+}
+
+.instructions {
+    margin: 175px auto 0px;
+    padding: 10px;
+    width: 420px;
+    background: lightgrey;
+    color: grey;
+}
+
+.instructions__text {
+    margin-top: 10px;
+}
