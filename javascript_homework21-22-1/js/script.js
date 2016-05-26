@@ -23,4 +23,8 @@ function pow(number, exponent) {
 }
 
 
-module.exports = pow;
+try {
+  module.exports = pow;
+} 
+catch (e) {
+};
