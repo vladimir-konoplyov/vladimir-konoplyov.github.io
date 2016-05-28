@@ -6,6 +6,12 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'Montserrat Regular';
+  src: url("../fonts/montserrat-regular/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular/montserrat-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'Roboto Light';
   src: url("../fonts/roboto-light/roboto-light-webfont.eot");
   src: url("../fonts/roboto-light/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light/roboto-light-webfont.ttf") format("truetype");
@@ -134,6 +140,55 @@
     /*margin-left: -200px;*/
     margin-top: 16px;
     text-align: center; }
+  .slider__box-position {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    /*border: 1px solid red;*/ }
+  .slider__box-context {
+    position: absolute;
+    z-index: 10;
+    top: 69px;
+    left: 24px;
+    /*border: 1px solid yellow;*/ }
+  .slider__box-context2 {
+    position: absolute;
+    z-index: 10;
+    top: 99px;
+    left: 24px; }
+  .slider__box-context-button {
+    display: block;
+    margin-bottom: 20px;
+    /*margin: 17px auto 0;*/
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Montserrat Regular";
+    font-size: 10px;
+    background: #ff4e50;
+    color: #ffffff;
+    cursor: pointer; }
+  .slider__box-context-header-first, .slider__box-context-header-second {
+    text-align: left;
+    font-family: "Montserrat Bold";
+    font-size: 24px;
+    color: #ffffff; }
+  .slider__box-context-header-first {
+    margin-top: -2px; }
+  .slider__box-context-header-second {
+    margin-top: 4px; }
+  .slider__box-context-text {
+    margin-top: 15px;
+    line-height: 1.15;
+    text-align: left;
+    width: 260px;
+    height: 45px;
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: #cccccc; }
   .slider__image {
     display: block;
     border-radius: 5px;
@@ -145,14 +200,17 @@
 /* PARTNER */
 .partner__header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 20px; }
 .partner__header-first, .partner__header-second {
   font-family: "Montserrat Bold";
   font-size: 22px;
   color: #333333; }
+.partner__header-first {
+  /*margin-top: -3px;*/ }
 .partner__header-second {
-  display: block; }
+  display: block;
+  margin-top: 3px; }
 
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 @media screen and (min-width: 768px) {
