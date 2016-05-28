@@ -15,7 +15,8 @@
 	/*text-align: center;*/
 	margin: 0 auto;
 	background: url(../img/background_big.jpg) top center no-repeat;
-	/* background: url(../img/background_big.jpg) cover no-repeat; */
+	/*background-size: 100%;*/
+	/* background: url(../img/background_big.jpg) top center  no-repeat; */
 
 	&__links-pos {
 		/*display: block;*/
@@ -122,13 +123,17 @@
 
 .slider {
 	overflow: hidden;
-	width: 100%;
+	/*width: 768px;*/
 	height: 815px;
+	/*height: 893px;*/
 	margin: 0 auto;
+	/*border: 1px solid red;*/
 
 	&__header {
-		margin-top: 37px;
-		margin-bottom: 36px;
+		/*margin-top: 37px;*/
+		margin-top: 35px;
+		margin-left: 4px;
+		margin-bottom: 18px;
 		text-align: center;
 		font-family: $fontMontserratB;
 		font-size: 22px;
@@ -158,7 +163,7 @@
 
 	&__image {
 		display: block;
-				border-radius: 5px;
+		border-radius: 5px;
 		/*text-align: center;*/
 		margin: 10px auto;		
 	}
@@ -168,97 +173,7 @@
 
 }
 
-.jcarousel-wrapper {
 
-		display: none;
-
-
-
-    position: relative;
-        /*width: 90%;*/
-        float: left;
-        /*margin-left: 20px;*/
-        overflow: hidden;
-    /*margin: 25px auto;*/
-    /*border: 5px solid #ffffff;*/
-    /*box-shadow: 0 0 2px #120d51;*/
-    /*border-radius: 10px;*/
-}
-
-#jcarousel1 {
-margin-right: 20px;
-}
-
-.jcarousel-wrapper:last-child {
-	    margin-left: 20px;
-}
-
-
-.jcarousel1,
-.jcarousel2,
-.jcarousel3 {
-		/*display: none;*/
-    /*position: relative;*/
-    overflow: hidden;
-    margin: 0 auto;
-    /*width: 100%;*/
-    width: 300px;
-
-}
-
-.jcarousel1 ul,
-.jcarousel2 ul,
-.jcarousel3 ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.jcarousel1 li,
-.jcarousel2 li,
-.jcarousel3 li {
-    float: left;
-    width: 300px;
-}
-
-.jcarousel1 li img,
-.jcarousel2 li img,
-.jcarousel3 li img {
-    width: 100%;
-    height: 400px;    
-}
-
-.jcarousel-prev1,
-.jcarousel-prev2,
-.jcarousel-prev3
-{
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background: url(../img/colomnsprite.png) 0 0 no-repeat;
-    background-size: 35px;
-    width: 15px;
-    height: 30px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.jcarousel-next1,
-.jcarousel-next2,
-.jcarousel-next3
-{
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    background: url(../img/colomnsprite.png) -20px 0px no-repeat;
-    background-size: 35px;
-    width: 15px;
-    height: 30px;
-    display: inline-block;
-    cursor: pointer;
-}
 
 /* PARTNER */
 
@@ -334,6 +249,7 @@ margin-right: 20px;
 
 	&__title-central-1--modified {
 		padding-top: 222px;
+		margin-left: -5px;
 	}
 
 	&__title-central-2 {
@@ -342,6 +258,7 @@ margin-right: 20px;
 
 	&__title-central-2--modified {
 		padding-top: 10px;
+		margin-left: -5px;
 	}
 
 	&__title-bottom {
@@ -364,7 +281,9 @@ margin-right: 20px;
 	}
 
 	&__button {
-		margin: 34px auto 0;
+		 margin: 34px auto 0; 
+/*		margin-top: 10px;
+		margin-left: -5px;*/
 		width: 226px;
 	}
 
@@ -373,19 +292,132 @@ margin-right: 20px;
 
 
 .slider {
+	/*height: 650px;*/
+	height: 555px;
+
+	&__header {
+		margin-top: 96px;
+		margin-left: 5px;
+
+		}
 
 
 	&__box {
 		display: none;		
 		}
-
-
 	}
+
+
+.jcarousel-wrapper-position {
+	margin-top: 37px;
+	text-align: center;
+	/*border: 1px solid green;*/
+	overflow: hidden;
+}
+
+
 
 .jcarousel-wrapper {
+			display: inline-block;
 
-		display: block;
-	}
+
+
+		width: 235px;
+		overflow: hidden;
+
+	/*margin: 0 auto;*/
+	text-align: center;
+
+
+    position: relative;
+        /*width: 90%;*/
+        /*float: left;*/
+        /*margin-left: 20px;*/
+        /*overflow: hidden;*/
+    /*margin: 25px auto;*/
+    /*border: 5px solid #ffffff;*/
+    /*box-shadow: 0 0 2px #120d51;*/
+    /*border-radius: 10px;*/
+}
+
+#jcarousel1 {
+margin-right: 20px;
+}
+
+.jcarousel-wrapper:last-child {
+	    margin-left: 20px;
+}
+
+
+.jcarousel1,
+.jcarousel2,
+.jcarousel3 {
+		/*display: none;*/
+    /*position: relative;*/
+    overflow: hidden;
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
+    width: 300px;	
+    /*width: 235px;*/
+
+}
+
+.jcarousel1 ul,
+.jcarousel2 ul,
+.jcarousel3 ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel1 li,
+.jcarousel2 li,
+.jcarousel3 li {
+    float: left;
+    width: 300px;
+    margin-left: -30px;			/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*width: 235px;*/
+
+}
+
+.jcarousel1 li img,
+.jcarousel2 li img,
+.jcarousel3 li img {
+    width: 100%;
+    height: 400px;    
+}
+
+.jcarousel-prev1,
+.jcarousel-prev2,
+.jcarousel-prev3
+{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background: url(../img/colomnsprite.png) 0 0 no-repeat;
+    background-size: 35px;
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.jcarousel-next1,
+.jcarousel-next2,
+.jcarousel-next3
+{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    background: url(../img/colomnsprite.png) -20px 0px no-repeat;
+    background-size: 35px;
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
 
 
 
@@ -393,9 +425,10 @@ margin-right: 20px;
 .partner {
 
 	&__header {
-/*		text-align: center;
-		margin-top: 40px;
-		margin-bottom: 20px;*/
+		/*text-align: center;*/
+		margin-top: 100px;			/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+		margin-bottom: 32px;
+		/*margin-bottom: 20px;*/
 	}
 
 	&__header-first,
@@ -422,7 +455,7 @@ margin-right: 20px;
 
 	.header {
 		max-width: 100%;
-		height: 540px;
+		height: 702px;
 	
 	&__links-pos {
 		padding-right: 11%;
@@ -458,6 +491,46 @@ margin-right: 20px;
 
 	.slider__header {
 		margin-top: 97px;
+		margin-left: -10px;
 	}
+
+
+
+
+.jcarousel-wrapper-position {
+
+	/*border: 1px solid green;*/
+
+}
+
+
+.jcarousel-wrapper {
+	/*display: inline-block;*/
+	width: 300px;
+/*	overflow: hidden;
+	text-align: center;
+    position: relative;*/
+
+
+}
+
+.jcarousel1 li,
+.jcarousel2 li,
+.jcarousel3 li {
+    margin-left: 0px;			/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+}
+
+#jcarousel1 {
+margin-right: 15px;
+}
+
+.jcarousel-wrapper:last-child {
+	    margin-left: 15px;
+}
+
+
+
 }
 
