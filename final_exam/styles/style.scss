@@ -123,11 +123,12 @@
 .slider {
 	overflow: hidden;
 	width: 100%;
-	height: 540px;
+	height: 815px;
 	margin: 0 auto;
 
 	&__header {
 		margin-top: 37px;
+		margin-bottom: 36px;
 		text-align: center;
 		font-family: $fontMontserratB;
 		font-size: 22px;
@@ -136,7 +137,7 @@
 
 	&__box {
 
-						display: none;
+						display: block;		
 		/*margin-left: -200px;*/
 		margin-top: 16px;
 		text-align: center;
@@ -169,18 +170,29 @@
 
 .jcarousel-wrapper {
 
+		display: none;
+
 
 
     position: relative;
         /*width: 90%;*/
         float: left;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
         overflow: hidden;
     /*margin: 25px auto;*/
-    border: 5px solid #ffffff;
-    box-shadow: 0 0 2px #120d51;
-    border-radius: 10px;
+    /*border: 5px solid #ffffff;*/
+    /*box-shadow: 0 0 2px #120d51;*/
+    /*border-radius: 10px;*/
 }
+
+#jcarousel1 {
+margin-right: 20px;
+}
+
+.jcarousel-wrapper:last-child {
+	    margin-left: 20px;
+}
+
 
 .jcarousel1,
 .jcarousel2,
@@ -229,7 +241,8 @@
     background-size: 35px;
     width: 15px;
     height: 30px;
-    display: inline-block; 
+    display: inline-block;
+    cursor: pointer;
 }
 
 .jcarousel-next1,
@@ -244,7 +257,39 @@
     width: 15px;
     height: 30px;
     display: inline-block;
+    cursor: pointer;
 }
+
+/* PARTNER */
+
+.partner {
+
+	&__header {
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	&__header-first,
+	&__header-second {
+		font-family: $fontMontserratB;
+		font-size: 22px;
+		color: #333333;
+	}
+
+	&__header-second {
+		display: block;
+	}
+
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -324,6 +369,51 @@
 	}
 
 	}
+
+
+
+.slider {
+
+
+	&__box {
+		display: none;		
+		}
+
+
+	}
+
+.jcarousel-wrapper {
+
+		display: block;
+	}
+
+
+
+
+.partner {
+
+	&__header {
+/*		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 20px;*/
+	}
+
+	&__header-first,
+	&__header-second {
+/*		font-family: $fontMontserratB;
+		font-size: 22px;
+		color: #333333;*/
+	}
+
+	&__header-second {
+		display: inline-block;
+	}
+
+
+}
+
+
+
 }
 
 /* MEDIA QUAERIES MAX-WIDTH 940PX */
@@ -332,7 +422,7 @@
 
 	.header {
 		max-width: 100%;
-		width: 1200px;
+		height: 540px;
 	
 	&__links-pos {
 		padding-right: 11%;
@@ -357,6 +447,13 @@
 	}
 
 	}
+
+	.slider {
+	overflow: hidden;
+	width: 940px;
+	height: 560px;
+	margin: 0 auto;
+}
 
 
 	.slider__header {

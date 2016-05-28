@@ -104,7 +104,7 @@
 .slider {
   overflow: hidden;
   width: 100%;
-  height: 540px;
+  height: 815px;
   margin: 0 auto;
   /*	&__box-inner {
   		width: 300px;
@@ -119,12 +119,13 @@
   	}*/ }
   .slider__header {
     margin-top: 37px;
+    margin-bottom: 36px;
     text-align: center;
     font-family: "Montserrat Bold";
     font-size: 22px;
     color: #333333; }
   .slider__box {
-    display: none;
+    display: block;
     /*margin-left: -200px;*/
     margin-top: 16px;
     text-align: center; }
@@ -137,15 +138,22 @@
     margin-top: 0; }
 
 .jcarousel-wrapper {
+  display: none;
   position: relative;
   /*width: 90%;*/
   float: left;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   overflow: hidden;
   /*margin: 25px auto;*/
-  border: 5px solid #ffffff;
-  box-shadow: 0 0 2px #120d51;
-  border-radius: 10px; }
+  /*border: 5px solid #ffffff;*/
+  /*box-shadow: 0 0 2px #120d51;*/
+  /*border-radius: 10px;*/ }
+
+#jcarousel1 {
+  margin-right: 20px; }
+
+.jcarousel-wrapper:last-child {
+  margin-left: 20px; }
 
 .jcarousel1,
 .jcarousel2,
@@ -188,7 +196,8 @@
   background-size: 35px;
   width: 15px;
   height: 30px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
 .jcarousel-next1,
 .jcarousel-next2,
@@ -200,7 +209,20 @@
   background-size: 35px;
   width: 15px;
   height: 30px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
+
+/* PARTNER */
+.partner__header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+.partner__header-first, .partner__header-second {
+  font-family: "Montserrat Bold";
+  font-size: 22px;
+  color: #333333; }
+.partner__header-second {
+  display: block; }
 
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 @media screen and (min-width: 768px) {
@@ -247,12 +269,29 @@
         padding-left: 3px; }
     .header__button {
       margin: 34px auto 0;
-      width: 226px; } }
+      width: 226px; }
+
+  .slider__box {
+    display: none; }
+
+  .jcarousel-wrapper {
+    display: block; }
+
+  .partner__header {
+    /*		text-align: center;
+    		margin-top: 40px;
+    		margin-bottom: 20px;*/ }
+  .partner__header-first, .partner__header-second {
+    /*		font-family: $fontMontserratB;
+    		font-size: 22px;
+    		color: #333333;*/ }
+  .partner__header-second {
+    display: inline-block; } }
 /* MEDIA QUAERIES MAX-WIDTH 940PX */
 @media screen and (min-width: 940px) {
   .header {
     max-width: 100%;
-    width: 1200px; }
+    height: 540px; }
     .header__links-pos {
       padding-right: 11%; }
     .header__title-top {
@@ -265,6 +304,12 @@
         display: inline-block;
         padding-left: 0;
         margin-left: 3px; }
+
+  .slider {
+    overflow: hidden;
+    width: 940px;
+    height: 560px;
+    margin: 0 auto; }
 
   .slider__header {
     margin-top: 97px; } }
