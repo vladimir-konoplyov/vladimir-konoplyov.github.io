@@ -25,7 +25,19 @@ $(function() {
 // $(window).load(windowSize); 
 // $(window).resize(windowSize);
 
+// function windowSize(){
+//     if ($(window).width() >= '930') {
+//         var changeDivPartners2 = $('div#partners__image-box-2');
+//         var changeDivPartners3 = $('div#partners__image-box-3');
+//         changeDivPartners3.insertBefore(changeDivPartners2);
+//     }  
+//     else if ($(window).width() < '930') {
+//         changeDivPartners2.insertBefore(changeDivPartners3);
+//        }
+// }
 
+// $(window).load(windowSize); 
+// $(window).resize(windowSize);
 
 
     $('.jcarousel1').jcarousel();

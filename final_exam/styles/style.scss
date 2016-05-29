@@ -266,7 +266,7 @@
 
 /* PARTNER */
 
-.partner {
+.partners {
 
 	&__header {
 		text-align: center;
@@ -288,6 +288,47 @@
 	&__header-second {
 		display: block;
 		margin-top: 3px;
+	}
+
+	&__image-box {
+		/*position: relative;*/
+		display: block;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	&__image-box-name {
+		margin-top: 16px;
+		margin-left: 3px;
+		font-family: $fontMontserratR;
+		font-size: 14px;
+		color: #333333;
+	}
+
+	&__image-box-description {
+		margin: 15px auto 0;
+		width: 200px;
+		font-family: $fontRobotoL;
+		font-size: 14px;
+		line-height: 1.2;
+		color: #666666;
+	}
+
+	&__image-box-avatar-position {
+		position: relative;
+		margin: 0 auto;
+		width: 121px;
+	}
+
+	&__image-box-avatar {
+		margin-top: -2px;
+		margin-left: 4px;
+	}
+
+	&__image-box-sign {
+		position: absolute;
+		top: 82px;
+		right: -7px;
 	}
 
 
@@ -623,34 +664,42 @@ margin-right: 20px;
 
 
 
-	
 
 
 
-
-
-.partner {
+.partners {
+	text-align: center;
 
 	&__header {
-		/*text-align: center;*/
-		margin-top: 100px;			/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-		margin-bottom: 32px;
-		/*margin-bottom: 20px;*/
-	}
-
-	&__header-first,
-	&__header-second {
-/*		font-family: $fontMontserratB;
-		font-size: 22px;
-		color: #333333;*/
+		margin-top: 94px;
 	}
 
 	&__header-second {
 		display: inline-block;
 	}
 
+	&__boxes-position {
+		display: block;
+		width: 470px;
+		margin: 37px auto 0;
+	}
+
+	&__first-box,
+	&__second-box {
+		display: block;
+		float: left;
+	}
+
+	&__second-box {
+		margin-left: 60px;
+	}
+
+	&__image-box:nth-child(1) {
+		margin-bottom: 60px;
+	}
 
 }
+
 
 
 
@@ -790,6 +839,69 @@ margin-right: 15px;
 
 #carousel-next3 {
 	right: 14px;
+}
+
+
+
+
+
+.partners {
+	text-align: center;
+
+	&__header {
+		margin-top: 88px;
+	}
+
+	&__header-second {
+		display: inline-block;
+	}
+
+	&__boxes-position {
+		display: block;
+		width: 940px;
+		/*overflow: hidden;*/
+		/*margin: 37px auto 0;*/
+		/*text-align: center;*/
+		/*border: 1px solid green;*/
+	}
+
+/*	&__boxes-position-center {
+		border: 1px solid yellow;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+	}*/
+
+	&__first-box,
+	&__second-box {
+		display: block;
+		float: none;
+	}
+
+	&__second-box {
+		margin-left: 0px;
+	}
+
+	&__image-box:nth-child(1) {
+		margin-bottom: 0px;
+	}
+
+	&__image-box {
+		/*position: relative;*/
+		display: block;
+		float: left;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	
+}
+
+#partners__image-box-2,
+#partners__image-box-3,
+#partners__image-box-4 {
+	margin-left: 42px;
+
 }
 
 
