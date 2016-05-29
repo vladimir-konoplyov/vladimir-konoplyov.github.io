@@ -12,17 +12,15 @@ $(function() {
 //     $('body').css('background', 'blue');
 // }
 
-function windowSize(){
-if ($(window).width() < '768') {
-   // $('body').css('background', 'green');
-    $('.slider__box').css('display', 'block');
-    $('.jcarousel').css('display', 'none');
-} else if ($(window).width() > '768') {
-    // $('body').css('background', 'grey');
-    $('.slider__box').css('display', 'none');
-    $('.jcarousel').css('display', 'block');
-}
-}
+// function windowSize(){
+// if ($(window).width() < '768') {
+//     $('.slider__box').css('display', 'block');
+//     $('.jcarousel').css('display', 'none');
+// } else if ($(window).width() > '768') {
+//     $('.slider__box').css('display', 'none');
+//     $('.jcarousel').css('display', 'block');
+// }
+// }
 
 // $(window).load(windowSize); 
 // $(window).resize(windowSize);

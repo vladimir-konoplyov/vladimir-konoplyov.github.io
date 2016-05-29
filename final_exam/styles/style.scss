@@ -243,6 +243,23 @@
 		margin-top: 0;
 	}
 
+
+
+
+
+/*.jcarousel1 .slider__box-context, 
+.jcarousel2 .slider__box-context,
+.jcarousel2 .slider__box-context2,
+.jcarousel3 .slider__box-context {
+	display: none;
+}*/
+
+}
+
+.jcarousel1,
+.jcarousel2,
+.jcarousel3 {
+	display: none;
 }
 
 
@@ -292,6 +309,13 @@
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 
 @media screen and (min-width: 768px) {
+
+/*			.jcarousel1 .slider__box-context, 
+.jcarousel2 .slider__box-context,
+.jcarousel2 .slider__box-context2,
+.jcarousel3 .slider__box-context {
+	display: block;
+}*/
 
 	.header {
 		max-width: 940px;
@@ -368,6 +392,9 @@
 
 
 
+
+
+
 .slider {
 	/*height: 650px;*/
 	height: 555px;
@@ -382,7 +409,84 @@
 	&__box {
 		display: none;		
 		}
+
+
+
+	&__box-context {
+/*			position: absolute;
+		z-index: 10;*/
+		top: 211px;
+/*			left: 24px;*/
+		/*border: 1px solid yellow;*/
+		}
+
+	&__box-context2 {
+			position: absolute;
+			z-index: 10;
+			top: 258px;
+			left: 21px;
+
+				.slider__box-context-text {
+					margin-top: 13px;
+					margin-left: -2px;
+				}
+
+		}
+
+/*		&__box-context-button {
+			display: block;
+			margin-bottom: 20px;
+			width: 70px;
+			height: 20px;
+			line-height: 20px;
+			letter-spacing: 2px;
+			border: none;
+			border-radius: 20px;
+			font-family: $fontMontserratR;
+			font-size: 10px;
+			background: #ff4e50;
+			color: #ffffff;
+			cursor: pointer;
+		}*/
+
+		&__box-context-header-first,
+		&__box-context-header-second {
+			text-align: left;
+			font-family: $fontMontserratB;
+			font-size: 24px;
+			color: #ffffff;
+		}
+
+		&__box-context-header-first {
+			margin-top: -2px;
+			margin-left: -2px;
+		}
+
+		&__box-context-header-second {
+			margin-top: 4px;
+			margin-left: -2px;
+		}
+
+		&__box-context-text {
+/*			margin-top: 15px;*/
+			margin-left: -4px;
+/*			line-height: 1.15;
+			text-align: left;*/
+			width: 200px;
+/*			height: 45px;
+			font-family: $fontRobotoL;
+			font-size: 14px;
+			color: #cccccc;*/
+		}
+
+
+
+
+
+
 	}
+
+
 
 
 .jcarousel-wrapper-position {
@@ -426,10 +530,13 @@ margin-right: 20px;
 }
 
 
+
+
+
 .jcarousel1,
 .jcarousel2,
 .jcarousel3 {
-		/*display: none;*/
+		display: block;
     /*position: relative;*/
     overflow: hidden;
     /*margin: 0 auto;*/
@@ -471,12 +578,13 @@ margin-right: 20px;
 .jcarousel-prev3
 {
     position: absolute;
-    top: 100px;
-    left: 50px;
-    background: url(../img/colomnsprite.png) 0 0 no-repeat;
-    background-size: 35px;
-    width: 15px;
-    height: 30px;
+    top: 40px;
+    left: 23px;
+    /*background: url(../img/colomnsprite.png) 0 0 no-repeat;*/
+    background: url(../img/arrows_sprite.png) 0 0 no-repeat;
+    /*background-size: 35px;*/
+    width: 30px;
+    height: 55px;
     display: inline-block;
     cursor: pointer;
 }
@@ -486,15 +594,37 @@ margin-right: 20px;
 .jcarousel-next3
 {
     position: absolute;
-    top: 100px;
-    right: 50px;
-    background: url(../img/colomnsprite.png) -20px 0px no-repeat;
-    background-size: 35px;
-    width: 15px;
-    height: 30px;
+    top: 40px;
+    right: 9px;
+    background: url(../img/arrows_sprite.png) -30px 0px no-repeat;
+    /*background-size: 35px;*/
+    width: 40px;
+    height: 55px;
     display: inline-block;
     cursor: pointer;
 }
+
+#carousel-prev2{
+	left: 10px;
+}
+
+#carousel-next2 {
+	right: 2px;
+}
+
+#carousel-prev3 {
+	left: 18px;
+}
+
+#carousel-next3 {
+	right: 14px;
+}
+
+
+
+
+	
+
 
 
 
@@ -563,7 +693,14 @@ margin-right: 20px;
 	width: 940px;
 	height: 560px;
 	margin: 0 auto;
-}
+
+		&__box-context {
+			top: 226px;
+			left: 22px;
+		}
+	}
+
+
 
 
 	.slider__header {
@@ -605,6 +742,54 @@ margin-right: 15px;
 
 .jcarousel-wrapper:last-child {
 	    margin-left: 15px;
+}
+
+
+.jcarousel-prev1,
+.jcarousel-prev2,
+.jcarousel-prev3
+{
+    position: absolute;
+    top: 151px;
+    left: 20px;
+    /*background: url(../img/colomnsprite.png) 0 0 no-repeat;*/
+    background: url(../img/arrows_sprite.png) 0 0 no-repeat;
+    /*background-size: 35px;*/
+    width: 30px;
+    height: 55px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.jcarousel-next1,
+.jcarousel-next2,
+.jcarousel-next3
+{
+    position: absolute;
+    top: 151px;
+    right: 15px;
+    background: url(../img/arrows_sprite.png) -30px 0px no-repeat;
+    /*background-size: 35px;*/
+    width: 40px;
+    height: 55px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#carousel-prev2{
+	left: 19px;
+}
+
+#carousel-next2 {
+	right: 13px;
+}
+
+#carousel-prev3 {
+	left: 20px;
+}
+
+#carousel-next3 {
+	right: 14px;
 }
 
 
