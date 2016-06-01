@@ -269,7 +269,8 @@
     margin-left: 2px; }
   .discover__boxes {
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     padding-bottom: 28px; }
   .discover__box {
     position: relative;
@@ -322,6 +323,8 @@
 
 /* OUT RESULT OF IMAGE SEARCH*/
 .out-results {
+  /*max-width: 320px;*/
+  max-width: 100%;
   margin: 0 auto; }
   .out-results__wrapper {
     overflow: hidden;
@@ -718,6 +721,7 @@ input[placeholder]:focus {
 
   /* OUT RESULT OF IMAGE SEARCH*/
   .out-results {
+    max-width: 768px;
     margin: 0 auto; }
     .out-results__wrapper {
       padding-bottom: 0px;
@@ -976,6 +980,7 @@ input[placeholder]:focus {
 
   /* OUT RESULT OF IMAGE SEARCH*/
   .out-results {
+    max-width: 940px;
     margin: 0 auto; }
     .out-results__box0, .out-results__box1, .out-results__box2 {
       display: inline-block;
