@@ -624,24 +624,7 @@
 
 input[placeholder] {
   padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-moz-placeholder {
-  padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-moz-placeholder {
-  padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-ms-input-placeholder {
-  padding-left: 15px;
+  padding-top: 10px;
   color: #999999;
   font-family: "Roboto Light";
   font-size: 14px; }
