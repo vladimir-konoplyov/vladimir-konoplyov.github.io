@@ -84,7 +84,7 @@ function sliderJcarousel3() {
             success: function(data, textStatus) {
                 // console.log('Success: ', data);
                  var divBox = document.createElement('div');
-                 divBox.classList.add('out-results__wrapper');          
+                 divBox.classList.add('out-results__wrapper');
                 $.each(data.hits, function(i) {
                 // for(var i = 0; i <= 6; i++) {
                      var outResultsBox = document.createElement('div');
@@ -96,13 +96,7 @@ function sliderJcarousel3() {
                 $('#out-results').html(divBox);
             },
             error: function(data, textStatus) {
-                console.log('Error: images not found ', data);
-                var errorMesageBox = document.createElement('div');
-                errorMesageBox.classList.add('out-results__wrapper');
-                var outResultsBox = document.createElement('div');
-                outResultsBox.innerHTML = '<p>Images for your search are not found!</p>';
-                errorMesageBox.appendChild(outResultsBox);
-                $('#out-results').html(errorMesageBox);
+                // console.log('Error: images not found ', data);
             }
         });    
         return false;  
