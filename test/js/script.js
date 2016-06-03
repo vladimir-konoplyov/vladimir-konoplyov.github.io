@@ -98,13 +98,11 @@ function sliderJcarousel3() {
             success: function(data, textStatus) {
                 // console.log('Success: ', data);
                  var divBox = document.createElement('div');
-                 // divBox.classList.add('out-results__wrapper');          
-                 divBox.addClass('out-results__wrapper');          
+                 divBox.classList.add('out-results__wrapper');         
                 $.each(data.hits, function(i) {
                 // for(var i = 0; i <= 6; i++) {
                      var outResultsBox = document.createElement('div');
-                     // outResultsBox.classList.add('out-results__box'+ i);
-                     outResultsBox.addClass('out-results__box'+ i);
+                     outResultsBox.classList.add('out-results__box'+ i);
                      outResultsBox.innerHTML = '<img class="out-results__image' + i + '" src="'+data.hits[i].webformatURL+'">';
                     divBox.appendChild(outResultsBox);   
                 });
