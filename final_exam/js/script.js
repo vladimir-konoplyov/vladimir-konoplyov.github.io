@@ -102,7 +102,7 @@ function sliderJcarousel3() {
                 var outResultsBox = document.createElement('p');
                 outResultsBox.innerHTML = 'Images for your search are not found!';
                 divBox.appendChild(outResultsBox);
-                $('#out-results').html(divBox);
+                $('#out-results').html(errorMesage);
             }
         });    
         return false;  
