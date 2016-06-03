@@ -97,6 +97,12 @@ function sliderJcarousel3() {
             },
             error: function(data, textStatus) {
                 // console.log('Error: ', data);
+                var errorMesage = document.createElement('div');
+                errorMesage.classList.add('out-results__wrapper');
+                var outResultsBox = document.createElement('p');
+                outResultsBox.innerHTML = 'Images for your search are not found!';
+                divBox.appendChild(outResultsBox);
+                $('#out-results').html(divBox);
             }
         });    
         return false;  
