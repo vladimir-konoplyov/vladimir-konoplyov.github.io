@@ -1,5 +1,20 @@
 $(function() {
 
+// function windowSize(){
+//     var w = $('.out-results').width();
+//     if ((w > '321') && (w <= '767')) {
+//        $('.out-results').css('max-width', '70%');
+//     }
+//     else if ((w >= '768') && (w <= '939')) {  
+//       $('.out-results').css('max-width', '768px');
+//     }  else if (w >= '940') { 
+//       $('.out-results').css('max-width', '940px');      
+//        }
+// }
+
+// $(window).load(windowSize); 
+// $(window).resize(windowSize);
+
 function slowHoverEfect() {
 $('.header__text-sign-up').mouseenter(function() {
   $('.header__link-sign-up').css({'color':'#ff4e50', 'transition': '.5s'});
