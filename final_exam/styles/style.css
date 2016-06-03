@@ -293,9 +293,9 @@
   left: 2%;
   line-height: 1.1; }
 
-#discover__header2 {
-  margin-top: -16px; }
-
+/*#discover__header2 {
+	margin-top: -16px;
+}*/
 .discover__box:nth-child(1) {
   background: url("../img/ideas_image_default_1.jpg") top center no-repeat;
   background-size: cover; }
