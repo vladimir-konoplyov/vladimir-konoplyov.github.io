@@ -688,9 +688,10 @@ input[placeholder]:focus {
     text-decoration: underline; }
 
   .footer__company-menu {
-    width: 200px;
+    width: 88px;
     overflow: hidden;
     margin-top: 11px;
+    margin-right: 116px;
     margin-bottom: 45px;}
 
   .footer__company-menu-item {
