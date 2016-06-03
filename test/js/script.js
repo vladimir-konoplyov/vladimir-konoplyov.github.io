@@ -64,7 +64,7 @@ function sliderJcarousel3() {
         $.ajax({
             url: "http://api.pixplorer.co.uk/image?word="+ enteredQuery +"&amount=7&size=tb",
             success: function(data, textStatus) {
-                console.log('Success: ', data);
+                // console.log('Success: ', data);
                 var divBox = document.createElement('div');
                 divBox.classList.add('out-results__wrapper');
                 $.each(data.images, function(i) {
@@ -76,7 +76,7 @@ function sliderJcarousel3() {
                 $('#out-results').html(divBox);
             },
             error: function(data, textStatus) {
-                console.log('Error: ', data);
+                // console.log('Error: ', data);
             }
         });    
         return false;  
