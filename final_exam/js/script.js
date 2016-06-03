@@ -93,6 +93,8 @@ function sliderJcarousel3() {
         var API_KEY = '2671443-f70b44031fad9176b9185b139';
         $.ajax({
             url: "https://pixabay.com/api/?key="+API_KEY+"&q="+ enteredQuery + "&per_page=7&lang=ru",
+            dataType: 'jsonp',
+            method: 'GET',
             success: function(data, textStatus) {
                 console.log('Success: ', data);
                  var divBox = document.createElement('div');
