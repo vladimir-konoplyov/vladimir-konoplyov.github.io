@@ -96,7 +96,7 @@ function sliderJcarousel3() {
                 $('#out-results').html(divBox);
             },
             error: function(data, textStatus) {
-                // console.log('Error: ', data);
+                console.log('Error: images not found ', data);
                 var errorMesageBox = document.createElement('div');
                 errorMesageBox.classList.add('out-results__wrapper');
                 var outResultsBox = document.createElement('div');
