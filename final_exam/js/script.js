@@ -97,12 +97,12 @@ function sliderJcarousel3() {
             },
             error: function(data, textStatus) {
                 // console.log('Error: ', data);
-                var errorMesage = document.createElement('div');
-                errorMesage.classList.add('out-results__wrapper');
-                var outResultsBox = document.createElement('p');
-                outResultsBox.innerHTML = 'Images for your search are not found!';
-                divBox.appendChild(outResultsBox);
-                $('#out-results').html(errorMesage);
+                var errorMesageBox = document.createElement('div');
+                errorMesageBox.classList.add('out-results__wrapper');
+                var outResultsBox = document.createElement('div');
+                outResultsBox.innerHTML = '<p>Images for your search are not found!</p>';
+                errorMesageBox.appendChild(outResultsBox);
+                $('#out-results').html(errorMesageBox);
             }
         });    
         return false;  
