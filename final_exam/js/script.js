@@ -74,6 +74,7 @@ function sliderJcarousel3() {
 
     $('.search-form').on('submit', function() {
         $('.discover__boxes').hide();
+        $('#discover__header2').css('margin-top', '-16px');
         var enteredQuery = $('#entered-query').val();
         var API_KEY = '2671443-f70b44031fad9176b9185b139';
         $.ajax({
@@ -81,7 +82,7 @@ function sliderJcarousel3() {
             dataType: 'jsonp',
             method: 'GET',
             success: function(data, textStatus) {
-                console.log('Success: ', data);
+                // console.log('Success: ', data);
                  var divBox = document.createElement('div');
                  divBox.classList.add('out-results__wrapper');          
                 $.each(data.hits, function(i) {
@@ -95,7 +96,7 @@ function sliderJcarousel3() {
                 $('#out-results').html(divBox);
             },
             error: function(data, textStatus) {
-                console.log('Error: ', data);
+                // console.log('Error: ', data);
             }
         });    
         return false;  
