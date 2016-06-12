@@ -1,20 +1,5 @@
 $(function() {
 
-// function windowSize(){
-//     var w = $('.out-results').width();
-//     if ((w > '321') && (w <= '767')) {
-//        $('.out-results').css('max-width', '70%');
-//     }
-//     else if ((w >= '768') && (w <= '939')) {  
-//       $('.out-results').css('max-width', '768px');
-//     }  else if (w >= '940') { 
-//       $('.out-results').css('max-width', '940px');      
-//        }
-// }
-
-// $(window).load(windowSize); 
-// $(window).resize(windowSize);
-
 function slowHoverEfect() {
 $('.header__text-sign-up').mouseenter(function() {
   $('.header__link-sign-up').css({'color':'#ff4e50', 'transition': '.5s'});
@@ -89,6 +74,7 @@ function sliderJcarousel3() {
 
     $('.search-form').on('submit', function() {
         $('.discover__boxes').hide();
+        $('#discover__header2').css('margin-top', '-16px');
         var enteredQuery = $('#entered-query').val();
         var API_KEY = '2671443-f70b44031fad9176b9185b139';
         $.ajax({
@@ -98,7 +84,7 @@ function sliderJcarousel3() {
             success: function(data, textStatus) {
                 // console.log('Success: ', data);
                  var divBox = document.createElement('div');
-                 divBox.classList.add('out-results__wrapper');         
+                 divBox.classList.add('out-results__wrapper');
                 $.each(data.hits, function(i) {
                 // for(var i = 0; i <= 6; i++) {
                      var outResultsBox = document.createElement('div');
@@ -110,7 +96,7 @@ function sliderJcarousel3() {
                 $('#out-results').html(divBox);
             },
             error: function(data, textStatus) {
-                console.log('Error: ', data);
+                // console.log('Error: images not found ', data);
             }
         });    
         return false;  

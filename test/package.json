@@ -1,5 +1,5 @@
 {
-  "name": "final_exam",
+  "name": "exam",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "gulp-clean-css": "^2.0.10",
+    "gulp-debug": "^2.1.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.6"
+  },
+  "dependencies": {
+    "del": "^2.2.0"
   }
 }

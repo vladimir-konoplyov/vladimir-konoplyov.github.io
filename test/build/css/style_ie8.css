@@ -602,7 +602,7 @@
     margin: 21px auto 0;
     padding-left: 2px;
     width: 240px;
-    height: 38px;
+    height: 28px;
     border: 1px solid #cccccc; }
 
   .search-form__submit {
@@ -624,24 +624,7 @@
 
 input[placeholder] {
   padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-moz-placeholder {
-  padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-moz-placeholder {
-  padding-left: 15px;
-  color: #999999;
-  font-family: "Roboto Light";
-  font-size: 14px; }
-
-input:-ms-input-placeholder {
-  padding-left: 15px;
+  padding-top: 10px;
   color: #999999;
   font-family: "Roboto Light";
   font-size: 14px; }
@@ -688,10 +671,11 @@ input[placeholder]:focus {
     text-decoration: underline; }
 
   .footer__company-menu {
-    width: 200px;
+    width: 88px;
     overflow: hidden;
-      margin-top: 11px;
-      margin-bottom: 45px;}
+    margin-top: 11px;
+    margin-right: 116px;
+    margin-bottom: 45px;}
 
   .footer__company-menu-item {
     padding-right: 15px;
