@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables.scss';
 
 .wrapper {
 	min-width: 320px;
@@ -31,13 +31,13 @@
 		font-family: $fontMontserratB;
 		font-size: 14px;
 		text-decoration: none;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__link-log-in:hover,
 	&__link-sign-up:hover,
 	&__link-text-up:hover {
-		color: #ff4e50;
+		color: $colorLightRed;
 		transition: .5s;
 		cursor: pointer;
 	}
@@ -48,12 +48,12 @@
 		margin-left: 19px;
 		width: 86px;
 		height: 32px;
-		border: 2px solid #ffffff;
-		border-radius: 20px;
+		border: 2px solid $colorWite;
+		@include border-radius(20px);
 	}
 
 	&__text-sign-up:hover {
-		border: 2px solid #ff4e50;
+		border: 2px solid $colorLightRed;
 	}
 
 	&__link-sign-up {
@@ -63,7 +63,7 @@
 		font-family: $fontMontserratB;
 		font-size: 14px;
 		text-decoration: none;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__title-top {
@@ -72,7 +72,7 @@
 		font-family: $fontMontserratB;
 		font-size: 20px;
 		letter-spacing: 0.7px;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__title-central-1,
@@ -81,7 +81,7 @@
 		font-family: $fontMontserratB;
 		font-size: 30px;
 		text-transform: uppercase;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__title-central-1--modified {
@@ -98,7 +98,7 @@
 		text-align: center;
 		font-family: $fontRobotoL;
 		font-size: 18px;
-		color: #ffffff;
+		color: $colorWite;
 
 		&-first {
 			padding-left: 0px;
@@ -114,19 +114,19 @@
 		margin: 17px auto 0;
 		width: 280px;
 		height: 40px;
-		border: none;
-		border-radius: 20px;
+		@include border-radius(20px);
 		font-family: $fontMontserratB;
 		font-size: 14px;
-		background: #ff4e50;
-		color: #ffffff;
+		color: $colorWite;
+		border: 2px solid #ff4e50;
+		background: $colorLightRed;
 		cursor: pointer;
 	}
 
 	&__button:hover {
+		color: $colorWite;
 		background: #ff7173;
-		color: #ffffff;
-		border: 1px solid #ff4e50;
+		border: 1px solid $colorLightRed;
 		transition: .5s;
 	}
 }
@@ -179,21 +179,21 @@
 		margin-bottom: 20px;
 		width: 70px;
 		height: 20px;
-		line-height: 20px;
+		line-height: 16px;
 		letter-spacing: 2px;
-		border: none;
-		border-radius: 20px;
+		@include border-radius(20px);
 		font-family: $fontMontserratR;
 		font-size: 10px;
-		background: #ff4e50;
-		color: #ffffff;
+		color: $colorWite;
+		border: 2px solid #ff4e50;
+		background: $colorLightRed;
 		cursor: pointer;
 	}
 
 	&__box-context-button:hover {
 		background: #ff7173;
-		color: #ffffff;
-		border: 1px solid #ff4e50;
+		color: $colorWite;
+		border: 2px solid $colorLightRed;
 		transition: .5s;
 
 	}
@@ -203,7 +203,7 @@
 		text-align: left;
 		font-family: $fontMontserratB;
 		font-size: 24px;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__box-context-header-first {
@@ -227,7 +227,7 @@
 
 	&__image {
 		display: block;
-		border-radius: 5px;
+		@include border-radius(5px);
 		margin: 10px auto;		
 	}
 
@@ -319,16 +319,16 @@
 		width: 280px;
 		font-family: $fontMontserratB;
 		font-size: 14px;
-		color: #ff4e50;
-		background: #ffffff;
-		border-radius: 20px;
-		border: 2px solid #ff4e50;
+		color: $colorLightRed;
+		background: $colorWite;
+		@include border-radius(20px);
+		border: 2px solid $colorLightRed;
 		cursor: pointer;
 	}
 
 	&__button:hover {
-		color: #ffffff;
-		background: #ff4e50;
+		color: $colorWite;
+		background: $colorLightRed;
 		transition: .5s;
 	}
 }
@@ -372,7 +372,7 @@
 	width: 93%; 
 	height: 120px;
 	margin-bottom: 10px;
-	color: #ffffff;
+	color: $colorWite;
 	}
 
 	&__box-text {
@@ -494,7 +494,7 @@
 		width: 278px;
 		height: 38px;
 		border: 1px solid #cccccc;
-		border-radius: 3px;
+		@include border-radius(3px);
 	}
 
 	&__submit {
@@ -505,15 +505,15 @@
 		width: 280px;
 		font-family: $fontMontserratB;
 		font-size: 14px;
-		color: #ffffff;
-		background: #ff4e50;
-		border-radius: 20px;
-		border: 2px solid #ff4e50;
+		color: $colorWite;
+		background: $colorLightRed;
+		@include border-radius(20px);
+		border: 2px solid $colorLightRed;
 		cursor: pointer;
 	}
 
 	&__submit:hover {
-		color: #ffffff;
+		color: $colorWite;
 		background: #ff7173;
 		transition: .5s;
 	}
@@ -527,14 +527,14 @@ input:-moz-placeholder      {padding-left: 15px; color: #999999; font-family: $f
 input:-ms-input-placeholder {padding-left: 15px; color: #999999; font-family: $fontRobotoL; font-size: 14px;} 
 
 input[placeholder]:focus {
-	border: 1px solid #ff4e50;
+	border: 1px solid $colorLightRed;
 }
 
 /* FOOTER */
 
 .footer {
 	margin-top: 40px;
-	border-top: 4px solid #ff4e50;
+	border-top: 4px solid $colorLightRed;
 
 	&__wrapper {
 		max-width: 940px;
@@ -548,7 +548,7 @@ input[placeholder]:focus {
 		margin: 17px auto;
 		font-family: $fontMontserratB;
 		font-size: 16px;
-		color: #ff4e50;
+		color: $colorLightRed;
 	}
 
 	&__company {
@@ -681,7 +681,7 @@ input[placeholder]:focus {
 		text-align: center;
 		font-family: $fontRobotoL;
 		font-size: 24px;
-		color: #ffffff;
+		color: $colorWite;
 
 		&-first {
 			padding-left: 0px;
@@ -734,7 +734,7 @@ input[placeholder]:focus {
 		text-align: left;
 		font-family: $fontMontserratB;
 		font-size: 24px;
-		color: #ffffff;
+		color: $colorWite;
 	}
 
 	&__box-context-header-first {
