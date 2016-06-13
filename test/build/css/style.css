@@ -582,6 +582,10 @@ input[placeholder]:focus {
     margin-top: 10px;
     margin-bottom: 20px; }
 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .background {
+    background-image: url(example@2x.png); } }
+
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 @media screen and (min-width: 768px) {
   .header {
