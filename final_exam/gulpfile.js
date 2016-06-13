@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   watch = require('gulp-watch'),
   imagemin = require('gulp-imagemin'),
+  spritesmith = require('gulp.spritesmith'),
   del = require('del');
 
 // Компиляция SCSS в CSS
@@ -45,6 +46,19 @@ gulp.task('images-min', function() {
     .pipe(imagemin())
     .pipe(gulp.dest('build/img/'));
 });
+
+// Сборка спрайта из нескольких картинок
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/images_for_sprite/*.png')
+    .pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.scss',
+    algorithm: 'left-right'
+  }));
+  return spriteData.pipe(gulp.dest('build/img/sprite/'));
+});
+
+
 
 // Отслеживание изменений файлов *.scss и script.js
 gulp.task('watch', function () {
