@@ -103,7 +103,6 @@ function sliderJcarousel3() {
     }); 
   }
 
-
 slowHoverEfect(); // function for slow hover efect for block sign up
 
 sliderJcarousel1(); // first slider

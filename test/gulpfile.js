@@ -1,18 +1,19 @@
 'use strict';
 
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify'),
-	cleanCSS = require('gulp-clean-css'),
-	sass = require('gulp-sass'),
-	watch = require('gulp-watch'),
+  uglify = require('gulp-uglify'),
+  cleanCSS = require('gulp-clean-css'),
+  sass = require('gulp-sass'),
+  watch = require('gulp-watch'),
   imagemin = require('gulp-imagemin'),
+  spritesmith = require('gulp.spritesmith'),
   del = require('del');
 
-// Копиляция SCSS в CSS
+// Компиляция SCSS в CSS
 gulp.task('sass', function() {
-	return gulp.src('src/styles/style.scss')
-	.pipe(sass())
-	.pipe(gulp.dest('build/css/'));
+  return gulp.src('src/styles/style.scss')
+  .pipe(sass())
+  .pipe(gulp.dest('build/css/'));
 });
 
 // Минификация файла script.js
@@ -46,11 +47,33 @@ gulp.task('images-min', function() {
     .pipe(gulp.dest('build/img/'));
 });
 
+// Сборка спрайта из нескольких картинок
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/images_for_sprite/*.png')
+    .pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.scss',
+    algorithm: 'left-right'
+  }));
+  return spriteData.pipe(gulp.dest('build/img/sprite/'));
+});
+
+// Сборка спрайта для retina
+gulp.task('sprite-retina', function () {
+  var spriteData = gulp.src('src/img/images_for_sprite_retina/*.png')
+    .pipe(spritesmith({
+    imgName: 'sprite@2x.png',
+    cssName: 'sprite@2x.scss',
+    algorithm: 'left-right'
+  }));
+  return spriteData.pipe(gulp.dest('build/img/sprite/'));
+});
+
 // Отслеживание изменений файлов *.scss и script.js
 gulp.task('watch', function () {
   gulp.watch('src/styles/*.scss', ['sass']);
   gulp.watch('src/js/script.js', ['compress-js']);
 });
 
-// Установка оперций по умолчанию при запуске команды gulp
+// Установка операций по умолчанию при запуске команды gulp
 gulp.task('default', ['sass', 'compress-js', 'copy', 'images-min', 'watch']);
