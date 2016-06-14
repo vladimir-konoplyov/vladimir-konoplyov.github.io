@@ -58,7 +58,16 @@ gulp.task('sprite', function () {
   return spriteData.pipe(gulp.dest('build/img/sprite/'));
 });
 
-
+// Сборка спрайта для retina
+gulp.task('sprite-retina', function () {
+  var spriteData = gulp.src('src/img/images_for_sprite_retina/*.png')
+    .pipe(spritesmith({
+    imgName: 'sprite@2x.png',
+    cssName: 'sprite@2x.scss',
+    algorithm: 'left-right'
+  }));
+  return spriteData.pipe(gulp.dest('build/img/sprite/'));
+});
 
 // Отслеживание изменений файлов *.scss и script.js
 gulp.task('watch', function () {
@@ -67,4 +76,4 @@ gulp.task('watch', function () {
 });
 
 // Установка операций по умолчанию при запуске команды gulp
-gulp.task('default', ['sass', 'compress-js', 'copy', 'images-min', 'watch']);
+gulp.task('default', ['sass', 'compress-js', 'copy', 'watch']);

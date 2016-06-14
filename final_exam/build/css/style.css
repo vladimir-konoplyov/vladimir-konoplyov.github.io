@@ -67,6 +67,51 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
 .wrapper {
   min-width: 320px;
   margin: 0 auto; }
@@ -581,6 +626,31 @@ input[placeholder]:focus {
   .footer__designed-image {
     margin-top: 10px;
     margin-bottom: 20px; }
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .header {
+    background: url(../img/background_big@2x.jpg) top center no-repeat; }
+  .discover__box:nth-child(1) {
+    background: url("../img/ideas_image_default_1@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(2) {
+    background: url("../img/ideas_image_default_2@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(3) {
+    background: url("../img/ideas_image_default_3@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(4) {
+    background: url("../img/ideas_image_default_4@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(5) {
+    background: url("../img/ideas_image_default_5@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(6) {
+    background: url("../img/ideas_image_default_6@2x.jpg") top center no-repeat;
+    background-size: cover; }
+  .discover__box:nth-child(7) {
+    background: url("../img/ideas_image_default_7@2x.jpg") top center no-repeat;
+    background-size: cover; } }
 
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 @media screen and (min-width: 768px) {

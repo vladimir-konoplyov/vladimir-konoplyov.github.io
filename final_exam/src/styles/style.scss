@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import '../../build/img/sprite/sprite.scss';
+@import '../../build/img/sprite/sprite@2x.scss';
 
 .wrapper {
 	min-width: 320px;
@@ -652,6 +653,51 @@ input[placeholder]:focus {
 	}	
 }
 
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	
+	.header {
+		background: url(../img/background_big@2x.jpg) top center no-repeat;
+	}
+
+	.discover__box:nth-child(1) {
+		background: url('../img/ideas_image_default_1@2x.jpg')  top center no-repeat;
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(2) {
+		background: url('../img/ideas_image_default_2@2x.jpg')  top center no-repeat;
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(3) {
+		background: url('../img/ideas_image_default_3@2x.jpg')  top center no-repeat; 
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(4) {
+		background: url('../img/ideas_image_default_4@2x.jpg')  top center no-repeat;
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(5) {
+		background: url('../img/ideas_image_default_5@2x.jpg')  top center no-repeat;
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(6) {
+		background: url('../img/ideas_image_default_6@2x.jpg')  top center no-repeat;
+		background-size: cover;
+	}
+
+	.discover__box:nth-child(7) {
+		background: url('../img/ideas_image_default_7@2x.jpg')  top center no-repeat;
+		background-size: cover;
+}
+}
 
 /* MEDIA QUAERIES MAX-WIDTH 768PX */
 
