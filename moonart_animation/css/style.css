@@ -1,0 +1,111 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+a img {
+    border: 0px solid;
+}
+
+.last_work_wrap {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 75px;
+    margin-left: 75px;
+}
+
+.last_work_pair_one {
+    width: 250px;
+    margin-right: 21px;
+}
+
+.fl {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.last_work_one {
+    width: 250px;
+    height: 156px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.last_work_one_foto {
+    width: 250px;
+    height: 156px;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.last_work_one_foto img {
+    width: 250px;
+}
+
+.pos {
+    position: absolute;
+}
+
+.last_work_one_data {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 156px;
+    z-index: 20;
+    background: url(../img/last_work_one_data.png) no-repeat;
+}
+
+.last_work_one_text {
+    font-family: 'Century Gothic';
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 10px;
+    border-left: 1px solid #f00;
+    line-height: 12px;
+    width: 220px;
+    margin: 30px 0 0 10px;
+    text-transform: uppercase;
+}
+
+.last_work_see_more {
+    bottom: 1px;
+    right: 0px;
+    z-index: 30;
+    width: 265px;
+    height: 156px;
+    background: #f3f3f3;
+    cursor: pointer;
+}
+
+.last_work_see_more_button {
+    background: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    top: 2px;
+}
+
+.last_work_see_more_button a {
+    background: url(../img/last_work_see_more.png) no-repeat scroll 50% 0;
+    width: 150px;
+    height: 55px;
+    display: block;
+    margin-top: 46px;
+}
+
+.copyright-moonart {
+    overflow: hidden;
+    margin-top: 200px;
+    margin-right: 50px;
+    text-align: right;
+    font-family: Tahoma, Arial;
+}
