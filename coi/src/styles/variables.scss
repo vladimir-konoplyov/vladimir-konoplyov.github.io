@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/roboto_black/roboto_black-webfont.otf');
+    src: url('../fonts/roboto_black/roboto_black-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/roboto_condensed/roboto_condensed-webfont.otf');
+    src: url('../fonts/roboto_condensed/roboto_condensed-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/roboto_thin/roboto_thin-webfont.otf');
+    src: url('../fonts/roboto_thin/roboto_thin-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/roboto_regular/roboto_regular-webfont.otf');
+    src: url('../fonts/roboto_regular/roboto_regular-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto_light/roboto_light-webfont.otf');
+    src: url('../fonts/roboto_light/roboto_light-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontRobotoB: "Roboto Black";
+$fontRobotoC: "Roboto Condensed";
+$fontRobotoT: "Roboto Thin";
+$fontRobotoR: "Roboto Regular";
+$fontRobotoL: "Roboto Light";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
