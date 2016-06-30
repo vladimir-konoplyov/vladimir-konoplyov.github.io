@@ -1,5 +1,6 @@
 $(function() {
 
+	// Функція для додавання блакитного фону іконкам при наведенні 
 	function categoryHover() {
 		$('.icons-category__wrapper').mouseenter(function() {
 			$(this).find('.icons-category__wrapper-bg').css('display', 'block');
@@ -10,6 +11,7 @@ $(function() {
 		});		
 	}
 
+	//Функція для розгортання меню при натисканні на іконку при роздільній здатності екрану 320px
 	function showMenu() {
 		var count = 0;
 		$('.menu__icon').click(function() {
@@ -24,6 +26,7 @@ $(function() {
 		});		
 	}
 
+	// Функція для розгортання форми після натискання на кнопку "Замовити"
 	function showFormOrder() {
 		var countShowForm = 0;
 		$('.button--big').click(function() {
@@ -38,14 +41,14 @@ $(function() {
 		});
 	}
 
-
+	// Функція збільшення фото в модальному вікні
 	function showPhoto() {
 		$('.main-photo-box__link').click(function() {
 			$('.modal-window').fadeIn('slow');		
 		});
 	}
 
-
+	// Функція згортання фото та закриття модального вікна
 	function hidePhoto() {
 		$('.modal-window__close').click(function() {
 			$('.modal-window').fadeOut('slow');		
@@ -57,21 +60,17 @@ $(function() {
 		});
 	}
 
-	$('#google_map').attr('width', '500');
 
-
-
+// Ініціалізація паралакс-плагіну
 $('.parallax-layer')
-.parallax({}, {}, {xparallax: '200px', yparallax: '100px'});
+	.parallax({}, {}, {xparallax: '200px', yparallax: '50px'});
 
-
+// Виклик функцій
 categoryHover();
 showMenu();
 showFormOrder();
 showPhoto();
 hidePhoto();
-
-
 
 });
 
