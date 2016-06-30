@@ -643,4 +643,12 @@
     border-radius: 20px;
     border: 1px solid #000000; }
   .menu__big li:hover > a {
-    font-family: "Roboto Black"; } }
+    font-family: "Roboto Black"; }
+  /* LOGO */
+  .logo {
+    margin-top: 34px; }
+    .logo__header {
+      font-size: 81px; }
+    .logo__image {
+      width: 78px; }
+  /* MAIN */ }
