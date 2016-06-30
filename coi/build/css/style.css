@@ -633,8 +633,14 @@
   .menu__big li {
     padding-right: 12px;
     padding-left: 12px; }
+  .menu__big li:first-child {
+    padding-left: 12px; }
+  .menu__big li:last-child {
+    padding-right: 12px; }
   .menu__big li a {
     font-size: 24px; }
   .menu__big li:hover {
     border-radius: 20px;
-    border: 1px solid #000000; } }
+    border: 1px solid #000000; }
+  .menu__big li:hover > a {
+    font-family: "Roboto Black"; } }
