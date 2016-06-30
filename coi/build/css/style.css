@@ -463,7 +463,7 @@
       overflow: hidden; }
     .main__text {
       width: 49%;
-      margin-top: -2px;
+      margin-top: 0px;
       text-align: left;
       border-top: 1px solid black;
       padding-top: 7px; }
@@ -539,7 +539,8 @@
   .main__text--portfolio {
     width: auto;
     text-align: right;
-    position: relative; }
+    position: relative;
+    border: none; }
   .main-photo-box--portfolio {
     float: left;
     margin-top: -96px; }
@@ -561,7 +562,6 @@
       width: 100px;
       height: 60px;
       padding-right: 10px; }
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   /* ORDER-BOX */
   .input-text,
   .input-mail {
@@ -646,9 +646,171 @@
     font-family: "Roboto Black"; }
   /* LOGO */
   .logo {
-    margin-top: 34px; }
+    margin-top: 18px; }
     .logo__header {
       font-size: 81px; }
     .logo__image {
-      width: 78px; }
-  /* MAIN */ }
+      width: 78px;
+      margin-top: 17px; }
+  /* MAIN */
+  .main {
+    max-width: 1600px; }
+    .main__box-thin {
+      max-width: 1518px; }
+    .main__text {
+      width: 45%;
+      padding-top: 45px;
+      /*    margin-top: -2px;
+    text-align: left;
+    border-top: 1px solid black;
+    padding-top: 7px;*/ }
+    .main__text-title {
+      /*display: inline-block;*/
+      font-size: 71px; }
+    .main__text-title-second-part {
+      /*    display: inline-block;
+    margin-left: 0px;*/
+      font-size: 71px; }
+    .main__text-paragraf {
+      margin-top: 35px;
+      /*    margin-top: 14px;
+    text-align: left;*/
+      font-size: 14px;
+      /*    letter-spacing: 0px;
+    line-height: 1.3;*/ }
+  /* PHOTO-BOX */
+  .main-photo-box {
+    /*    float: right;
+    margin-top: -1px;
+    margin-right: 10px;*/ }
+    .main-photo-box__image {
+      width: 650px;
+      height: 392px;
+      margin-top: 114px; }
+  /* BUTTON */
+  /*.button--small {
+    display: none;
+}
+
+.button--white {
+    display: none;
+}
+
+.button_position {
+    text-align: right;
+}*/
+  .button--big {
+    width: 224px;
+    height: 50px;
+    margin: 0;
+    margin-left: 1119px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    border-radius: 78px;
+    font-size: 32px; }
+  /* ICONS */
+  .icons-category {
+    margin-top: 247px; }
+    .icons-category__wrapper {
+      padding-right: 68px; }
+    .icons-category__wrapper:first-child {
+      padding-right: 68px; }
+    .icons-category__wrapper:nth-child(2) {
+      padding-right: 68px; }
+    .icons-category__wrapper img {
+      width: 133px;
+      height: 133px; }
+    .icons-category__wrapper-bg {
+      width: 133px;
+      height: 133px;
+      border-radius: 65px; }
+    .icons-category__description {
+      margin-top: 10px; }
+  #icons-category__d1 {
+    margin-left: 0px; }
+  #icons-category__d2 {
+    margin-left: 0px; }
+  /*PORTFOLIO-BOX*/
+  .main__box-wide {
+    height: 802px;
+    max-width: 1600px;
+    margin-top: 106px;
+    background: url(../img/trees.jpg) no-repeat;
+    background-size: cover; }
+  .main__text--portfolio {
+    width: auto;
+    margin-top: -28px;
+    text-align: right;
+    position: relative;
+    border: none; }
+  .main__text-title--white {
+    color: white; }
+  .main-photo-box--portfolio {
+    float: left;
+    margin-top: 16px; }
+  .main__text-paragraf--white {
+    width: 49%;
+    padding-top: 35px;
+    margin-left: 765px;
+    text-align: right; }
+  .portfolio-box__header {
+    margin-top: 315px;
+    margin-left: 214px;
+    font-size: 72px; }
+  .portfolio-box__images {
+    margin-top: 15px; }
+  .portfolio-box__images img {
+    width: 204px;
+    height: 121px;
+    padding-right: 10px; }
+  /* ORDER-BOX */
+  .input-text,
+  .input-mail {
+    width: 800px;
+    height: 40px; }
+  .input-button {
+    width: 400px;
+    height: 40px; }
+  /* WIDGET-BOX */
+  .widget-box {
+    margin-top: 183px;
+    width: 310px;
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    height: 206px; }
+  /* RULES-BOX */
+  .rules-box {
+    margin-top: 281px;
+    margin-bottom: 15px; }
+    .rules-box__header {
+      margin-top: 24px;
+      font-size: 46px; }
+    .rules-box__text {
+      font-size: 25px; }
+  /* FOOTER */
+  .footer {
+    max-width: 1600px;
+    margin-top: 258px; }
+    .footer__text-contact {
+      margin-top: 20px;
+      margin-left: 46px;
+      font-size: 43px; }
+    .footer__text-mail {
+      margin-top: 70px;
+      margin-left: 46px;
+      font-size: 20px; }
+    .footer__text-phone {
+      margin-top: 5px;
+      margin-left: 46px;
+      margin-bottom: 20px;
+      font-size: 20px; }
+  .footer-standart {
+    display: none; }
+  .parallax-viewport {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100px; }
+  .parallax-layer {
+    position: absolute; } }

@@ -57,6 +57,8 @@ $(function() {
 		});
 	}
 
+	$('#google_map').attr('width', '500');
+
 
 
 $('.parallax-layer')
