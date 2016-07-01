@@ -340,6 +340,7 @@
 .order-box {
     display: none;
     text-align: center;
+    clear: both;        /*!!!!!!!!!!!!!!!!!!*/
 }
 
 .order-box p {
@@ -352,6 +353,12 @@
 
 .order-box button {
     font-family: $fontRobotoR, sans-serif;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.form-wrapper {
+    overflow: hidden;
+    text-align: center;
 }
 
 .input-text,
@@ -975,6 +982,10 @@
 }
 
 /* BUTTON */
+
+.button-wraper {
+    width: 700px;
+}
 
 .button--big {
     width: 224px;

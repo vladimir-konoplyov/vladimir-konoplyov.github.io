@@ -303,7 +303,9 @@
 /* ORDER BOX */
 .order-box {
   display: none;
-  text-align: center; }
+  text-align: center;
+  clear: both;
+  /*!!!!!!!!!!!!!!!!!!*/ }
 
 .order-box p {
   margin-top: 10px; }
@@ -313,6 +315,11 @@
 
 .order-box button {
   font-family: "Roboto Regular", sans-serif; }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.form-wrapper {
+  overflow: hidden;
+  text-align: center; }
 
 .input-text,
 .input-mail {
@@ -737,6 +744,8 @@
     height: 392px;
     margin-top: 114px; }
   /* BUTTON */
+  .button-wraper {
+    width: 700px; }
   .button--big {
     width: 224px;
     height: 50px;
