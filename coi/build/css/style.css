@@ -404,12 +404,18 @@
 @media screen and (min-width: 768px) {
   /* HEADER */
   .header {
-    max-width: 768px;
+    /*max-width: 768px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    max-width: 100%;
     height: auto;
     border: none; }
     .header__box-thin {
-      max-width: 724px;
-      width: 100%; }
+      /*max-width: 724px;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      max-width: 1600px;
+      /*width: 100%;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      width: 96%; }
   /* MENU */
   .menu-box {
     float: none;
@@ -451,10 +457,16 @@
       width: 40px; }
   /* MAIN */
   .main {
-    max-width: 768px; }
+    /*max-width: 768px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    max-width: 1600px; }
     .main__box-thin {
-      max-width: 724px;
-      width: 100%;
+      /*max-width: 724px;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      max-width: 1600px;
+      /*width: 100%;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      width: 97%;
       overflow: hidden; }
     .main__text {
       width: 50%;
@@ -482,10 +494,14 @@
     float: right;
     margin-top: -1px;
     margin-right: 10px; }
-    .main-photo-box_image {
-      width: 312px;
-      height: 208px; }
+    .main-photo-box__image {
+      width: 315px;
+      height: 205px; }
   /* BUTTON */
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .button-wraper {
+    width: 350px;
+    float: right; }
   .button--small {
     display: none; }
   .button--white {
@@ -496,9 +512,12 @@
     width: 120px;
     height: 38px;
     margin: 0;
-    margin-left: 510px;
+    /*margin-left: 510px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin-left: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin: 10px auto;
     line-height: 38px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -535,8 +554,16 @@
     margin-left: 16px; }
   /*PORTFOLIO-BOX*/
   .main__box-wide {
-    max-width: 768px;
-    margin-top: 26px; }
+    /*max-width: 768px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    max-width: 1600px;
+    margin-top: 26px;
+    background: url(../img/trees.jpg) no-repeat;
+    background-size: cover; }
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .main__text-title-wrapper {
+    display: block;
+    overflow: hidden; }
   .main__text-title--white {
     color: white; }
   .main__text--portfolio {
@@ -546,17 +573,30 @@
     border: none; }
   .main-photo-box--portfolio {
     float: left;
-    margin-top: -96px; }
+    margin-top: -73px; }
   .main__text-paragraf--white {
     width: 49%;
-    margin-left: 354px;
+    /*margin-left: 354px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin-left: 0;
+    float: right;
     text-align: right; }
   .portfolio-box {
-    margin-top: 0px; }
+    margin-top: 20px;
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/ }
+    .portfolio-box__wrapper {
+      width: 350px;
+      overflow: hidden;
+      float: right; }
     .portfolio-box__header {
-      margin-left: 54px;
+      /*margin-left: 54px;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      margin-left: 0;
       letter-spacing: 0;
-      font-size: 38px; }
+      font-size: 38px;
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+      float: right;
+      margin-right: 17%; }
     .portfolio-box__images {
       float: right;
       margin-right: 10px;
@@ -607,11 +647,15 @@
       font-size: 14px; }
   /* FOOTER */
   .footer {
-    max-width: 768px;
+    /*max-width: 768px;*/
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    max-width: 1600px;
     margin-top: 42px; }
     .footer__text-contact {
-      margin-top: 12px;
-      margin-left: 20px;
+      margin-top: 14px;
+      /*margin-left: 20px;*/
+      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+      margin-left: 2%;
       font-size: 21px; }
     .footer__text-mail {
       margin-top: 8px;
