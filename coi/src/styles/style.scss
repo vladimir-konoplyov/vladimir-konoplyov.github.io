@@ -321,6 +321,17 @@
         margin: 8px auto 5px;
     }
 
+/*    &__images-wrapper:hover {
+        overflow: hidden;
+        border: 1px solid #248cec;
+    }*/
+
+    &__images a:hover img {
+        border: 1px solid #248cec;
+        box-shadow: 0 0 10px #248cec;
+        box-sizing: border-box;
+    }
+
     &__images img {
         padding-right: 4px;
     }
@@ -340,7 +351,7 @@
 .order-box {
     display: none;
     text-align: center;
-    clear: both;        /*!!!!!!!!!!!!!!!!!!*/
+    clear: both;
 }
 
 .order-box p {
@@ -355,7 +366,6 @@
     font-family: $fontRobotoR, sans-serif;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .form-wrapper {
     overflow: hidden;
     text-align: center;
@@ -475,15 +485,12 @@
 
 /* HEADER */
 .header {
-    /*max-width: 768px;*/   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 100%;
     height: auto;
     border: none;
 
     &__box-thin {
-    /*max-width: 724px;*/   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 1600px;
-    /*width: 100%;*/        /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     width: 96%;
     }
 }
@@ -556,13 +563,10 @@
 /* MAIN */
 
 .main {
-    /*max-width: 768px;*/       /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 1600px;
 
     &__box-thin {
-    /*max-width: 724px;*/       /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 1600px;
-    /*width: 100%;*/            /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     width: 97%;
     overflow: hidden;
     }
@@ -612,7 +616,6 @@
 
 /* BUTTON */
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .button-wraper {
     width: 350px;
     float: right;
@@ -634,15 +637,10 @@
     width: 120px;
     height: 38px;
     margin: 0;
-    /*margin-left: 510px;*/     /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-left: 0;
-
     margin-top: 10px;
     margin-bottom: 10px;
-
     margin: 10px auto;
-
-
     line-height: 38px;
     @include border-radius(20px);
     font-size: 18px;
@@ -695,14 +693,12 @@
 /*PORTFOLIO-BOX*/
 
 .main__box-wide {
-    /*max-width: 768px;*/       /*!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 1600px;
     margin-top: 26px;
     background: url(../img/trees.jpg) no-repeat;
     background-size: cover;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .main__text-title-wrapper {
     display: block;
     overflow: hidden;
@@ -726,7 +722,6 @@
 
 .main__text-paragraf--white {
     width: 49%;
-    /*margin-left: 354px;*/     /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-left: 0;
     float: right;
     text-align: right;
@@ -735,7 +730,6 @@
 .portfolio-box {
     margin-top: 20px;
 
-    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     &__wrapper {
     width: 350px;
     overflow: hidden;
@@ -743,11 +737,9 @@
     }
 
     &__header {
-    /*margin-left: 54px;*/      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-left: 0;
     letter-spacing: 0;
     font-size: 38px;
-    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
     float: right;
     margin-right: 17%;
     }
@@ -832,13 +824,11 @@
 /* FOOTER */
 
 .footer {
-    /*max-width: 768px;*/       /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     max-width: 1600px;
     margin-top: 42px;
 
     &__text-contact {
     margin-top: 14px;
-    /*margin-left: 20px;*/      /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-left: 2%;
     font-size: 21px;
     }
@@ -991,11 +981,7 @@
     width: 224px;
     height: 50px;
     margin: 0;
-    /*margin-left: 1119px;*/        /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-left: 0;
-/*    margin-top: 21px;
-    margin-bottom: 10px;*/
-    margin: 21px auto 10px;         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     line-height: 50px;
     @include border-radius(78px);
     font-size: 32px;
@@ -1083,7 +1069,6 @@
 
 .portfolio-box {
 
-        /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     &__wrapper {
     width: 700px;
     overflow: hidden;
