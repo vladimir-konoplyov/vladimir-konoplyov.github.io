@@ -12,6 +12,8 @@
     <script>new WOW().init();</script>
     <script src="build/js/jquery.parallax.js"></script>
     <script src="build/js/script.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+    <script src="build/js/map-coi.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -129,7 +131,8 @@
             </div>
             <div class="main__box-thin">
                 <div class="widget-box">
-                    <iframe  width="290" height="130" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=23.988840579986572%2C49.84938802835732%2C23.99436593055725%2C49.85165014294259&amp;layer=cyclemap&amp;marker=49.85051909888433%2C23.99160325527191" style="border: 1px solid black"></iframe>
+                    <div id='map-coi'></div>
+                    <!-- <iframe  width="290" height="130" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=23.988840579986572%2C49.84938802835732%2C23.99436593055725%2C49.85165014294259&amp;layer=cyclemap&amp;marker=49.85051909888433%2C23.99160325527191" style="border: 1px solid black"></iframe> -->
                 </div>
                 <div class="rules-box">
                     <p class="rules-box__header">ПРАВИЛА</p>
