@@ -189,6 +189,7 @@
 /* MAIN-MENU*/
 
 .menu {
+	display: block;
 	height: 57px;
 	margin-top: 15px;
 	background: #00acac;
@@ -986,7 +987,7 @@
 }
 
 .menu ul li:last-child {
-	padding-left: 21%;
+	padding-left: 20%;
 }
 
 /* DONORS-CATLOG */

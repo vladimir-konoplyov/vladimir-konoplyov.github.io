@@ -145,7 +145,21 @@ function sliderJcarousel2() {
   });
   }  
 
+
+// Функція перевірки розміру екрану (вікна)
+function windowSize(){
+    if ($(window).width() > '952') {
+    $('.menu').css('display', 'block');
+  } else if ($(window).width() <= '952') {
+    $('.menu').css('display', 'none');
+  }
+}
+
+
+
 // Виклик функцій
+$(window).load(windowSize); 
+$(window).resize(windowSize);
 sliderJcarousel();
 sliderJcarousel2();
 showMenuMain();

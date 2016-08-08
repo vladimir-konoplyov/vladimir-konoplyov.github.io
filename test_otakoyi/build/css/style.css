@@ -214,6 +214,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* MAIN-MENU*/
 .menu {
+  display: block;
   height: 57px;
   margin-top: 15px;
   background: #00acac;
@@ -776,7 +777,7 @@ The `sprites` mixin generates identical output to the CSS template
   .menu ul li:nth-child(9) {
     display: none; }
   .menu ul li:last-child {
-    padding-left: 21%; }
+    padding-left: 20%; }
   /* DONORS-CATLOG */
   .donors-catalog {
     height: 250px;
