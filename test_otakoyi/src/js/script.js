@@ -146,12 +146,14 @@ function sliderJcarousel2() {
   }  
 
 
-// Функція перевірки розміру екрану (вікна)
+// Функція перевірки розміру екрану (вікна) та відображення меню після згортання
 function windowSize(){
     if ($(window).width() > '952') {
     $('.menu').css('display', 'block');
+    $('.side-box').css('display', 'block');
   } else if ($(window).width() <= '952') {
     $('.menu').css('display', 'none');
+    $('.side-box').css('display', 'none');
   }
 }
 

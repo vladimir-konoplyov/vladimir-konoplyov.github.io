@@ -3,10 +3,10 @@ $(function(){
     $('.last_work_see_more').hover(
     function(){
         $(this).find('div').animate({'background-color':'#222'},300);
-        $(this).find('a').css('background-position','50% -55px');
+        // $(this).find('a').css('background-position','50% -55px');
     },function(){
         $(this).find('div').animate({'background-color':'#fff'},300);
-        $(this).find('a').css('background-position','50% 0px');
+        // $(this).find('a').css('background-position','50% 0px');
     });
     
     $('.last_work_one').hover(function(){
