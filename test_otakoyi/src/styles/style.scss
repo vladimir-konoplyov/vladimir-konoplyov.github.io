@@ -101,7 +101,7 @@
 .button {
     width: 211px;
     height: 38px;
-    border-radius: 5px;
+    @include border-radius(5px);
     background-color: rgb( 74, 184, 72 );
     box-shadow: 0px 3px 1px #3ba639;
     border: 1px solid rgb( 74, 184, 72 );
@@ -291,7 +291,8 @@
     height: 250px;
     width: 100%;
     background: url(../img/donors-catalog-background.jpg);
-    background-position: 55% 32%;
+    background-size: 100%;
+    background-position: 55% 23%;
 
     &__link-box {
         margin-top: 16px;
@@ -409,7 +410,7 @@
         width: 216px;
         height: 32px;
         margin-bottom: 4px;
-        border-radius: 5px;
+        @include border-radius(5px);
         border: 1px solid #a6d7d7;
     }
 
@@ -625,7 +626,7 @@
     width: 3px;    
     background: #fff;
     color: blue;
-    border-radius: 14px;
+    @include border-radius(14px);
     border: 1px solid #00acac;
     padding: 3px;
     text-align: center;    
@@ -716,7 +717,7 @@
         text-align: center;
         font-family: $fontRobotoB;
         font-size: 15px;
-        border-radius: 5px;
+        @include border-radius(5px);
         border: 2px solid #ffffff;
         background: transparent;
         color: #ffffff;
@@ -998,6 +999,7 @@
     width: 100%;
     background: url(../img/donors-catalog-background.jpg) no-repeat;
     background-position: 66% 18%;
+    background-size: 100%;
 
     &__text {
         margin-top: 51px;
@@ -1177,40 +1179,6 @@
     margin-left: 9px;
 }
 
-.jcarousel-pagination a,
-.jcarousel2-pagination a {
-    padding: 0 5px;
-}
-
-.box-pagination,
-.box-pagination2 {
-    text-align: center;
-}
-
-.jcarousel-pagination a,
-.jcarousel2-pagination a  {
-    text-decoration: none;
-    display: inline-block;    
-    font-size: 11px;
-    height: 3px;
-    width: 3px;    
-    background: #fff;
-    color: blue;
-    border-radius: 14px;
-    border: 1px solid #00acac;
-    padding: 3px;
-    text-align: center;    
-    margin-right: 7px;    
-    opacity: 0.75;
-}
-
-.jcarousel-pagination a.active,
-.jcarousel2-pagination a.active {
-    background: #00acac;
-    color: #fff;
-    opacity: 1;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-}
 
 /* PROGRAMS */
 
@@ -1519,13 +1487,13 @@
     }
 
     &__banner {
-        margin: 20px auto;
-        width: 248px;
-        height: 180px;
+        margin: 27px auto 15px;
+        width: 450px;
+        height: 237px;
     }
 
     &__banner p {
-        line-height: 180px;
+        line-height: 242px;
     }
 }
 
@@ -1756,6 +1724,8 @@
 
 .donors-catalog {
     height: 192px;
+    background-size: cover;
+    background-position: 57% 0;
 
     &__link-box {
         margin-top: 8px;

@@ -201,4 +201,7 @@
             return this._carouselItems;
         }
     });
+
+console.log('Current page', curr);
+
 }(jQuery));

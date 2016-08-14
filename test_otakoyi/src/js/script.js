@@ -11,6 +11,9 @@ function sliderJcarousel() {
     });
     $('.jcarousel-pagination').on('jcarouselpagination:active', 'a', function() {
       $(this).addClass('active');
+
+        $('.jcarousel-prev').addClass('prev1');
+        $('.jcarousel-next').addClass('next1');
     })
       .on('jcarouselpagination:inactive', 'a', function() {
         $(this).removeClass('active');
@@ -27,27 +30,35 @@ function sliderJcarousel2() {
     $('.jcarousel2-next').click(function() {
         $('.jcarousel2').jcarousel('scroll', '+=1');
     });
-    $('.jcarousel2-pagination').on('jcarouselpagination:active', 'a', function() {
+    $('.jcarousel2-pagination').on('jcarouselpagination2:active', 'a', function() {
       $(this).addClass('active');
+        $('.jcarousel2-prev').addClass('prev2');
+        $('.jcarousel2-next').addClass('next2');
     })
-      .on('jcarouselpagination:inactive', 'a', function() {
+      .on('jcarouselpagination2:inactive', 'a', function() {
         $(this).removeClass('active');
       })
-      .jcarouselPagination();
+      .jcarouselPagination2();
 }
 
 //Функція для розгортання головного меню при натисканні на іконку
   function showMenuMain() {
     var count = 0;
     $('.small-menu').click(function() {
+      console.log('COUNT = ', count);
       $('.menu').slideDown('slow');
       count++;
-      console.log('COUNT=', count);
       if (count % 2 !== 0) {
         $('.menu').css('display', 'block').css('z-index', '100');
       } else {
         $('.menu').slideUp('slow');
       }
+      $(document).keydown(function(e) {
+      if(e.keyCode === 27) {
+        $('.menu').slideUp('slow');
+        count = 0;
+      }
+    });
     });   
   }
 
@@ -63,6 +74,12 @@ function sliderJcarousel2() {
       } else {
         $('.side-box').fadeOut('slow');
       }
+      $(document).keydown(function(e) {
+      if(e.keyCode === 27) {
+        $('.side-box').fadeOut('slow');
+        count = 0;
+      }
+    });
     });   
   }
 
@@ -143,8 +160,7 @@ function sliderJcarousel2() {
       $('#scrollup').fadeOut('fast');
     }
   });
-  }  
-
+  }
 
 // Функція перевірки розміру екрану (вікна) та відображення меню після згортання
 function windowSize(){
@@ -156,8 +172,6 @@ function windowSize(){
     $('.side-box').css('display', 'none');
   }
 }
-
-
 
 // Виклик функцій
 $(window).load(windowSize); 
