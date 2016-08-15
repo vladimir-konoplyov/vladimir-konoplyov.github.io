@@ -1050,7 +1050,7 @@ The `sprites` mixin generates identical output to the CSS template
     .article-box--second {
       margin-top: 57px;
       margin-bottom: 43px; }
-  #article-box__text3-span2 {
+  .article-box__text3-span2 {
     margin-top: 10px; }
   .button--middle {
     margin-top: 23px;
