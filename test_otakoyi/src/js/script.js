@@ -83,63 +83,77 @@ function sliderJcarousel2() {
     });   
   }
 
-  //Функція для розгортання меню футера при натисканні на іконку
+  //Функція для розгортання меню футера при натисканні на категорію
   function showMenuFooter() {
     var count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0;
+    
+     // if ($(window).width() < '750') {
+
     $('.footer-menu-link1').click(function(e) {
       e.preventDefault();
-      $('.footer-menu1').fadeIn('slow');
-      count1++;
-      if (count1 % 2 !== 0) {
-      $('.footer-menu1').css('display', 'block');
-      } else {
-       $('.footer-menu1').fadeOut('slow');
+      if ($(window).width() < '970') {
+        $('.footer-menu1').fadeIn('slow');
+        count1++;
+        if (count1 % 2 !== 0) {
+        $('.footer-menu1').css('display', 'block');
+        } else {
+         $('.footer-menu1').fadeOut('slow');
+        }
       }
-    });  
+    }); 
 
     $('.footer-menu-link2').click(function(e) {
       e.preventDefault();
-      $('.footer-menu2').fadeIn('slow');
-      count2++;
-      if (count2 % 2 !== 0) {
-      $('.footer-menu2').css('display', 'block');
-      } else {
-       $('.footer-menu2').fadeOut('slow');
+      if ($(window).width() < '970') {
+        $('.footer-menu2').fadeIn('slow');
+        count2++;
+        if (count2 % 2 !== 0) {
+        $('.footer-menu2').css('display', 'block');
+        } else {
+         $('.footer-menu2').fadeOut('slow');
+        }
       }
     }); 
 
     $('.footer-menu-link3').click(function(e) {
       e.preventDefault();
-      $('.footer-menu3').fadeIn('slow');
-      count3++;
-      if (count3 % 2 !== 0) {
-      $('.footer-menu3').css('display', 'block');
-      } else {
-       $('.footer-menu3').fadeOut('slow');
+      if ($(window).width() < '970') {
+        $('.footer-menu3').fadeIn('slow');
+        count3++;
+        if (count3 % 2 !== 0) {
+        $('.footer-menu3').css('display', 'block');
+        } else {
+         $('.footer-menu3').fadeOut('slow');
+        }
       }
     }); 
 
     $('.footer-menu-link4').click(function(e) {
       e.preventDefault();
-      $('.footer-menu4').fadeIn('slow');
-      count4++;
-      if (count4 % 2 !== 0) {
-      $('.footer-menu4').css('display', 'block');
-      } else {
-       $('.footer-menu4').fadeOut('slow');
+      if ($(window).width() < '970') {
+        $('.footer-menu4').fadeIn('slow');
+        count4++;
+        if (count4 % 2 !== 0) {
+        $('.footer-menu4').css('display', 'block');
+        } else {
+         $('.footer-menu4').fadeOut('slow');
+        }
       }
     }); 
 
     $('.footer-menu-link5').click(function(e) {
       e.preventDefault();
-      $('.footer-menu5').fadeIn('slow');
-      count5++;
-      if (count5 % 2 !== 0) {
-      $('.footer-menu5').css('display', 'block');
-      } else {
-       $('.footer-menu5').fadeOut('slow');
+      if ($(window).width() < '970') {
+        $('.footer-menu5').fadeIn('slow');
+        count5++;
+        if (count5 % 2 !== 0) {
+        $('.footer-menu5').css('display', 'block');
+        } else {
+         $('.footer-menu5').fadeOut('slow');
+        }
       }
     }); 
+  // }
   }
 
 // Функція прокрутки екрану догори при натисканні на кнопку (зі стрілкою вверх)
@@ -164,13 +178,28 @@ function sliderJcarousel2() {
 
 // Функція перевірки розміру екрану (вікна) та відображення меню після згортання
 function windowSize(){
-    if ($(window).width() > '952') {
+    if ($(window).width() > '969') {
     $('.menu').css('display', 'block');
     $('.side-box').css('display', 'block');
-  } else if ($(window).width() <= '952') {
+  } else if ($(window).width() <= '970') {
     $('.menu').css('display', 'none');
     $('.side-box').css('display', 'none');
   }
+
+    if ($(window).width() > '969') {
+    $('.footer-menu1').css('display', 'block');
+    $('.footer-menu2').css('display', 'block');
+    $('.footer-menu3').css('display', 'block');
+    $('.footer-menu4').css('display', 'block');
+    $('.footer-menu5').css('display', 'block');
+  }
+    if ($(window).width() <= '970') {
+    $('.footer-menu1').css('display', 'none');
+    $('.footer-menu2').css('display', 'none');
+    $('.footer-menu3').css('display', 'none');
+    $('.footer-menu4').css('display', 'none');
+    $('.footer-menu5').css('display', 'none');
+  } 
 }
 
 // Виклик функцій
