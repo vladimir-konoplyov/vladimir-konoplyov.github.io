@@ -1,73 +1,109 @@
-body {
-	padding: 0;
-	margin:  0;
-	background-color: #E6E6E6;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-	padding: 0;
-	margin: 0;
-	font-family: serif;
+body {
+  background-color: #939393;
+}
+
+.wrapper {
+  width: 76%;
+  margin: 100px auto;
+  background-color: #f0f4f6;
+  border: 1px solid #838383;
+}
+
+.name {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.photo {
+  background: url(../img/photo.jpg);
+  background-position: -104px -6px;
+  margin: 20px auto 0;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #8f8f8f;
+}
+
+.student-text {
+  margin-top: 19px;
+  margin-left: 25.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(31, 31, 31, 0.8);
+}
+
+.title-frontend,
+.title-phone,
+.title-vk,
+.title-feedback {
+  margin-left: 25.5%;
+  margin-right: 5%;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.title-feedback {
+  margin-top: -2px;
+  }
+
+hr {
+  width: 48.5%;
+  margin: 19px auto 17px;
+  color: red;
+}
+
+hr:first-child {
+  margin-top: 19px;
 }
 
 ul {
-	padding: 0 0 0 30px;
+  margin-top: 23px;
+  margin-bottom: -2px;
 }
 
-.maket {
-	margin: 0 auto;
-	width: 450px;
-	height: 650px;
-	background-color: white;
-	border: 2px solid #D8D8D8;
+ul li {
+  margin-left: 28.5%;
+  margin-right: 5%;
+  padding-left: 0.5%;
+  line-height: 1.4;
+  font-family: Arial;
+  font-size: 13px;
+  color: #3b3b3b;
 }
 
-.text-header {
-	padding: 35px 0 15px 0;
-	text-align: center;
-	font-size: 20px;
-	font-weight: bold;
+.text-phone,
+.text-feedback {
+  font-family: Arial;
+  color: #3a3a3a;
 }
 
-.image-center {
-	margin-bottom: 5px;
-	text-align: center;
-	}
-
-.text-specialty {
-	margin-left: 10px;
-	padding: 0 0 12px 0;
+.text-phone {
+  margin: 22px 0 15px;
+  margin-left: 29%;
+  font-size: 14px;
 }
 
-.line-bottom {
-	margin-left: 30px;
-	margin-right: 30px;
-	border-bottom: 2px solid #D8D8D8;
+.text-feedback {
+  margin: 22px 0 290px;
+  margin-left: 29%;
+  margin-right: 5%;
+  font-size: 13px;
+  
 }
 
-.text-motivation {
-	margin-top: 17px;
-	margin-bottom: 20px;
-	margin-left: 40px;
+.link-social {
+  display: block;
+  margin-top: 21px;
+  margin-left: 29%;
+  font-style: italic;
+  font-size: 14px;
+  color: #0056d3;
 }
-
-.text-box {
-	margin-top: 17px;
-}
-
-.text-in-box {
-	margin-left: 40px;
-}
-
-
-.text-vkontakte {
-	margin-left: 40px;
-	margin-top: 25px;
-}
-
-.link_vkontakte {
-	margin-left: 10px;
-	padding-bottom: 12px;
-}
-
-
