@@ -10,4 +10,4 @@
 
 Страница: [http://vladimir-konoplyov.github.io/html_module_3/](http://vladimir-konoplyov.github.io/html_module_3/)
 
-Код: [https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/tree/master/homework3](https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/tree/master/html_module_3)
+Код: [https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/tree/master/html_module_3](https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/tree/master/html_module_3)
