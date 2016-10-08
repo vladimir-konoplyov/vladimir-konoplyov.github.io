@@ -6,7 +6,7 @@
 
 1. Сверстать страницу согласно предоставленного макета. Верстка должна выглядеть как можно более похожей к макету.
 
-<img src="https://github.com/goit-fe/markup_fe2o/blob/master/html_03/homework3.psd" alt="Layout for HTML module 3">
+<img src="https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/blob/master/html_module_3/img/homework3.jpg" alt="Layout for HTML module 3">
 
 Страница: [http://vladimir-konoplyov.github.io/html_module_3/](http://vladimir-konoplyov.github.io/html_module_3/)
 
