@@ -18,16 +18,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Walkway Bold';
-	src: url('../fonts/WalkwayBold/WalkwayBold.eot');
-	src: url('../fonts/WalkwayBold/WalkwayBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/WalkwayBold/WalkwayBold.woff') format('woff'),
-		url('../fonts/WalkwayBold/WalkwayBold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
 .wrapper {
 	position: relative;
 	max-width: 1200px;
@@ -36,14 +26,13 @@
 	overflow: hidden;
 }
 
-/*CSS styles for Pixelfresh game page (1-st page)*/
-
-.pixelfresh-image-link {
-	display: block;
-	margin-top: 152px;
-}
+/*CSS styles for 1-st slide */
 
 .pixelfresh-logo {
+	position: absolute;
+	bottom: 48%;
+	right: 0;
+	left: 0;
 	width: 718px;
 	height: 156px;
 	transform: scale(1,1);
@@ -66,6 +55,19 @@
 	letter-spacing: 7.5px;
 	text-transform: none;
 	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.pixelfresh-logo__text span {
+	text-transform: none;
+	font-weight: bold;
+}
+
+.pixelfresh__text-box {
+	position: absolute;
+	bottom: 27%;
+	right: 0;
+	left: 0;
 }
 
 .pixelfresh-text {
@@ -89,139 +91,92 @@
 .pixelfresh-image {
 	display: block;
 	position: absolute;
-	bottom: 3%;;
-	right: 10%;
+	bottom: 7.5%;;
+	right: 4.5%;
 }
 
-/*CSS styles for  Out of brake grand pris game page (2-nd page)*/
+/* CSS styles for page 2-nd slide and 3-rd slide
+   Abbreviation:
+   oobgp - Out of brake grand pris,
+   oob - Out of brake */
 
 .oobgp-logo,
-.oobgp-text-box {
+.oob-logo {
+	position: absolute;
+	top: 7%;
+	left: 2%;
+}
+
+.oobgp-logo-inner-wrapper,
+.oob-logo-inner-wrapper  {
+	position: relative;
+	text-align: center;
+}
+
+.oobgp-logo__text-box,
+.oob-logo__text-box {
 	visibility: hidden;
-}
-
-.oobgp-logo {
 	position: absolute;
-	top: -60px;	
-}
-
-.oobgp-logo__image1 {
-	position: absolute;
-	top: 126px;
-	left: 262px;
-	z-index: 1;
-}
-
-.oobgp-logo__image2 {
-	position: absolute;
-	top: 28px;
-	left: 34px;
-}
-
-.oobgp-logo__text-box {
-	position: absolute;
-	top: 145px;
-	left: 545px;
+	top: 116px;
+	left: 512px;
 	z-index: 5;
 }
 
-.oobgp-logo__text {
+.oobgp-logo__text,
+.oob-logo__text {
 	font-family: "Upheaval Pro";
 	font-style: italic;
-	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	text-shadow: 0.04em 0 0 #fff, -2px 0 0 #fff, 0 0.04em 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   	color: rgb(31, 32, 41);
 }
 
-.oobgp-logo__text-first-line {
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
 	text-align: left;
 	font-size: 100px;
+	letter-spacing: 3px;
 }
 
-.oobgp-logo__text-first-line span {
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span  {
 	font-size: 80px;
 }
 
-.oobgp-logo__text-second-line {
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
     margin-top: -28px;
     padding-left: 40px;
 	font-size: 120px;
+	letter-spacing: 3px;
 }
 
 .oobgp-logo__text-third-line {
-    margin-top: -25px;
+    margin-top: -23px;
     padding-left: 8px;
 	font-size: 74px;
   	color: rgb(214, 50, 0);
+  	letter-spacing: 4.5px;
 }
 
 .oobgp-text-box {
 	position: absolute;
 	margin: auto;
-	bottom: 50px;
+	bottom: 9.5%;
+	line-height: 1.2;
 	left: 0;
 	right: 0;
-}
-
-.oobgp-text {
-	font-family: "Geosans Light";
-	font-size: 42px;
-	text-transform: none;
-	color: #ffffff;
-}
-
-/*CSS styles for  Out of brake game page (3-rd page)*/
-
-.oob-logo,
-.oob-text-box {
-	visibility: hidden;
-}
-
-.oob-logo {
-	position: absolute;
-	top: -40px;
-}
-
-
-.oob-logo__text-box {
-	position: absolute;
-	top: 148px;
-    left: 235px;
-}
-
-.oob-logo__text {
-	position: relative;
-	top: -20px;
-	margin-left: 105px;
-	z-index: 2;
-	font-family: "Upheaval Pro";
-}
-
-.oob-logo__text-first-line,
-.oob-logo__text-second-line {
-	font-size: 100px;
-	font-style: italic;
-	line-height: 0.8;
-	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-  	color: rgb(31, 32, 41);
-}
-
-.oob-logo__text-first-line span {
-	font-size: 80px;
-}
-
-.oob-logo__text-second-line {
-	margin-left: 322px;
-	font-size: 120px;
 }
 
 .oob-text-box {
 	position: absolute;
 	margin: auto;
-	bottom: 125px;
-	right: 0;
+	bottom: 14.5%;
+	line-height: 1.2;
 	left: 0;
+	right: 0;
 }
 
+.oobgp-text,
 .oob-text {
 	font-family: "Geosans Light";
 	font-size: 42px;
@@ -253,54 +208,44 @@
 	color: #ffd862;
 }
 
-.clearfix:after {
-	content: '.';
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
 @media screen and (max-width: 1060px) {
 
-.oobgp-logo__image1 {
-	width: 216px;
-	position: absolute;
-	top: 168px;
-	left: 289px;
-	z-index: 1;
+.oobgp-logo__image,
+.oob-logo__image {
+	width: 100%;
 }
 
-.oobgp-logo__image2 {
-	width: 600px;
-	position: absolute;
-	top: 100px;
-	left: 135px;
+.oobgp-logo__text-box,
+.oob-logo__text-box {
+    top: 125px;
+    left: 515px;
 }
 
-.oobgp-logo__text-box {
-	top: 180px;
-    left: 492px;
-}
-
-.oobgp-logo__text-first-line {
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line  {
 	font-size: 70px;
 }
 
-.oobgp-logo__text-first-line span {
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
 	font-size: 50px;
 }
 
-.oobgp-logo__text-second-line {
-	padding-left: 25px;
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	margin-top: -10px;
+	padding-left: 36px;
 	font-size: 85px;
 }
 
 .oobgp-logo__text-third-line {
+	margin-top: -16px;
+	padding-left: 24px;
 	font-size: 55px;
 }
 
-.oobgp-text {
+.oobgp-text,
+.oob-text {
 	font-size: 30px;
 }
 
@@ -308,12 +253,54 @@
 
 @media screen and (max-width: 980px) {
 	
-.pixelfresh__text-box {
-	margin-bottom: 50px;
-}
-
 .pixelfresh-image {
 	width: 150px;
+}
+
+.oobgp-logo,
+.oob-logo {
+	width: 600px;
+	margin: auto;
+	top: 19%;
+	left: 5%;
+	right: 5%;
+}
+
+.oobgp-logo__text-box,
+.oob-logo__text-box {
+	top: 77px;
+	left: 359px;
+}
+
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
+	font-size: 60px;
+}
+
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
+	font-size: 50px;
+}
+
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	margin-top: -18px;
+	padding-left: 24px;
+	font-size: 75px;
+}
+
+.oobgp-logo__text-third-line {
+	margin-top: -14px;
+	padding-left: 7px;
+	font-size: 45px;
+}
+
+.oobgp-text-box {
+	bottom: 21%;
+}
+
+.oob-text-box {
+	bottom: 25%;
 }
 
 }
@@ -321,6 +308,7 @@
 @media screen and (max-width: 768px) {
 
 .pixelfresh-logo {
+	bottom: 55%;
 	width: 475px;
 	height: 100px;
 }
@@ -341,9 +329,98 @@
 	font-size: 35px;
 }
 
+.oobgp-logo,
+.oob-logo {
+	width: 450px;
+	margin: auto;
+	top: 19%;
+	left: 2%;
+	right: 2%;
+}
+
+.oobgp-logo__text-box,
+.oob-logo__text-box {
+	top: 61px;
+	left: 270px;
+	}
+
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
+	font-size: 50px;
+}
+
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
+	font-size: 35px;
+}
+
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	padding-left: 20px;
+	font-size: 65px;
+}
+
+.oobgp-logo__text-third-line {
+	font-size: 40px;
+}
+
+.oobgp-text-box {
+	bottom: 21%;
+}
+
+.oob-text-box {
+	bottom: 27%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.oobgp-logo__text-box,
+.oob-logo__text-box {
+	top: 63px;
+	left: 268px;
+}
+
+.oobgp-logo__text,
+.oob-logo__text {
+	line-height: 1;
+}
+
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
+	font-size: 40px;
+}
+
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
+	font-size: 25px;
+}
+
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	margin-top: -13px;
+	font-size: 55px;
+}
+
+.oobgp-logo__text-third-line {
+	margin-top: -9px;
+	padding-left: 0px;
+	font-size: 30px;
+}
+
+.oobgp-text-box {
+	bottom: 24%;
+	font-size: 25px;
+}
+
 }
 
 @media screen and (max-width: 480px) {
+
+.pixelfresh__text-box {
+	bottom: 30%;
+}
 
 #fp-nav {
 	right: 5px !important;
@@ -371,5 +448,145 @@
 	font-size: 25px;
 }
 
+.oobgp-logo,
+.oob-logo {
+	width: 300px;
+	top: 19%;
+}
+
+.oobgp-logo__text-box,
+.oob-logo__text-box {
+	top: 44px;
+	left: 180px;
+}
+
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
+	font-size: 20px;
+}
+
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
+	font-size: 10px;
+}
+
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	margin-top: -6px;
+	padding-left: 12px;
+	font-size: 30px;
+}
+
+.oobgp-logo__text-third-line {
+	margin-top: -3px;
+	margin-left: -10px;
+	font-size: 15px;
+}
+
+.oobgp-text-box {
+	bottom: 24%;	
+}
+
+.oobgp-text,
+.oob-text {
+	font-size: 20px;
+}
+
+.footer-text {
+	font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 360px) {
+
+#fp-nav {
+	right: 2px !important;
+}
+
+.pixelfresh__text-box {
+	bottom: 37%;
+}
+
+.pixelfresh-text {
+	font-size: 23px;
+}
+
+.oobgp-logo,
+.oob-logo {
+	width: 250px;
+	top: 19%;
+	left: 6%;
+}
+
+.oobgp-logo__text-box,
+.oob-logo__text-box  {
+	top: 37px;
+	left: 148px;
+}
+
+.oobgp-logo__text-first-line,
+.oob-logo__text-first-line {
+	font-size: 20px;
+}
+
+.oobgp-logo__text-first-line span,
+.oob-logo__text-first-line span {
+	font-size: 10px;
+}
+
+.oobgp-logo__text-second-line,
+.oob-logo__text-second-line {
+	font-size: 30px;
+}
+
+.oobgp-logo__text-third-line {
+	font-size: 15px;
+}
+
+.oobgp-text-box,
+.oob-text-box {
+	bottom: 30%;
+}
+
+.oobgp-text,
+.oob-text {
+	font-size: 16px;
+}
+
+.footer-text {
+	font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+#fp-nav {
+	visibility: hidden;
+}
+
+.pixelfresh-logo {
+	bottom: 62%;
+}
+
+.pixelfresh__text-box {
+	bottom: 35%;
+}
+
+.oobgp-logo,
+.oob-logo {
+	left: 0;
+	right: 5%;
+}
+
+.oobgp-text,
+.oob-text {
+	font-size: 14px;
+}
+
+.footer-text {
+	font-size: 12px;
+}
 
 }
