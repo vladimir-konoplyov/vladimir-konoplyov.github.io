@@ -2,22 +2,23 @@ $(function() {
 
   // Animation for Pixelfresh game page (1-st slide)
 function pixelfreshAnimate() {
-  $(".pixelfresh-logo__image").css('transition', '0.3s linear').css('transform', 'rotate(-360deg)');
+  $(".pixelfresh-logo__image").css('transition', '1s linear').css('transform', 'rotate(-360deg)')
+  .css('transition-timing-function', 'cubic-bezier(.22, .81, .50, .99)');
 };
 
 // Animation for Out of brake grand pris game page (2-nd slide)
 function oobpgAnimate() {
   $('.oobgp-logo__text-box').css('visibility', 'visible');
-  $(".oobgp-logo__text-first-line").addClass('animated bounceInLeft').css('animation-delay', '0.5s');
-  $(".oobgp-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '1s');
-  $(".oobgp-logo__text-third-line").addClass('animated bounceInRight').css('animation-delay', '1s');
+  $(".oobgp-logo__text-first-line").addClass('animated bounceInLeft');
+  $(".oobgp-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
+  $(".oobgp-logo__text-third-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
 };
 
 // Animation for Out of brake grand pris game page (3-rd slide)
 function oobAnimate() {
   $('.oob-logo__text-box ').css('visibility', 'visible');
-  $(".oob-logo__text-first-line").addClass('animated bounceInLeft').css('animation-delay', '0.5s');
-  $(".oob-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '1s');
+  $(".oob-logo__text-first-line").addClass('animated bounceInLeft');
+  $(".oob-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
 };
 
 

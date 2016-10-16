@@ -55,7 +55,7 @@
 	letter-spacing: 7.5px;
 	text-transform: none;
 	color: rgb(255, 255, 255);
-	text-shadow: 0px 0px 2px #000000;
+	text-shadow: -1px -1px  5px rgba(0,0,0,0.3), 1px 1px  5px rgba(0,0,0,0.3);
 }
 
 .pixelfresh-logo__text span {
@@ -197,10 +197,15 @@
 }
 
 .footer-text {
+	line-height: 1.5;
 	font-family: "Geosans Light";
 	font-size: 24px;
 	text-transform: none;
 	color: #ffffff;
+}
+
+.footer-text--first-line {
+	margin-bottom: 5px;
 }
 
 .e-mail-link {
@@ -239,9 +244,9 @@
 }
 
 .oobgp-logo__text-third-line {
-	margin-top: -16px;
+	margin-top: -10px;
 	padding-left: 24px;
-	font-size: 55px;
+	font-size: 51px;
 }
 
 .oobgp-text,
@@ -334,8 +339,8 @@
 	width: 450px;
 	margin: auto;
 	top: 19%;
-	left: 2%;
-	right: 2%;
+	left: 0%;
+	right: 5%;
 }
 
 .oobgp-logo__text-box,
@@ -361,7 +366,7 @@
 }
 
 .oobgp-logo__text-third-line {
-	font-size: 40px;
+	font-size: 39px;
 }
 
 .oobgp-text-box {
@@ -412,6 +417,10 @@
 .oobgp-text-box {
 	bottom: 24%;
 	font-size: 25px;
+}
+
+.footer {
+	bottom: 20px;
 }
 
 }
@@ -483,8 +492,9 @@
 	font-size: 15px;
 }
 
-.oobgp-text-box {
-	bottom: 24%;	
+.oobgp-text-box,
+.oob-text-box {
+	bottom: 32%;	
 }
 
 .oobgp-text,
@@ -492,8 +502,16 @@
 	font-size: 20px;
 }
 
+.footer {
+	bottom: 20px;
+}
+
 .footer-text {
-	font-size: 18px;
+	font-size: 16px;
+}
+
+.footer-text--first-line {
+	margin-bottom: 3px;
 }
 
 }
@@ -516,7 +534,6 @@
 .oob-logo {
 	width: 250px;
 	top: 19%;
-	left: 6%;
 }
 
 .oobgp-logo__text-box,
@@ -554,6 +571,10 @@
 	font-size: 16px;
 }
 
+.footer {
+	bottom: 15px;
+}
+
 .footer-text {
 	font-size: 15px;
 }
@@ -577,7 +598,7 @@
 .oobgp-logo,
 .oob-logo {
 	left: 0;
-	right: 5%;
+	right: 10%;
 }
 
 .oobgp-text,
@@ -585,8 +606,16 @@
 	font-size: 14px;
 }
 
+.footer {
+	bottom: 10px;
+}
+
 .footer-text {
 	font-size: 12px;
+}
+
+.footer-text--first-line {
+	margin-bottom: 2px;
 }
 
 }
