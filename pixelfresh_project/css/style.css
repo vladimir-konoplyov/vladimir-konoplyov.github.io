@@ -18,6 +18,7 @@
 	font-style: normal;
 }
 
+
 .wrapper {
 	position: relative;
 	max-width: 1200px;
@@ -191,13 +192,13 @@
 
 .footer {
 	position: absolute;
-	bottom: 25px;
+	bottom: 10px;
 	left: 0;
 	right: 0;
 }
 
 .footer-text {
-	line-height: 1.5;
+	line-height: 1.25;
 	font-family: "Geosans Light";
 	font-size: 24px;
 	text-transform: none;

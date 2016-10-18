@@ -1,8 +1,16 @@
 $(function() {
 
+
+// Define browser, if it's Safari text in logo will be changed from italic to normal
+  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    $('.oobgp-logo__text').css('font-style', 'normal');
+    $('.oob-logo__text').css('font-style', 'normal');
+  }
+
   // Animation for Pixelfresh game page (1-st slide)
 function pixelfreshAnimate() {
-  $(".pixelfresh-logo__image").css('transition', '1s linear').css('transform', 'rotate(-360deg)')
+  $(".pixelfresh-logo__image").css('transition', '1s linear').css('-webkit-transform', 'rotate(-360deg)')
   .css('transition-timing-function', 'cubic-bezier(.22, .81, .50, .99)');
 };
 
