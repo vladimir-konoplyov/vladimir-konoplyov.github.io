@@ -1,32 +1,21 @@
 $(function() {
 
-
-// Define browser, if it's Safari text in logo will be changed from italic to normal
-  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-    $('.oobgp-logo__text').css('font-style', 'normal');
-    $('.oob-logo__text').css('font-style', 'normal');
-  }
-
-  // Animation for Pixelfresh game page (1-st slide)
+// Animation for Pixelfresh game page (1-st slide)
 function pixelfreshAnimate() {
-  $(".pixelfresh-logo__image").css('transition', '1s linear').css('-webkit-transform', 'rotate(-360deg)')
-  .css('transition-timing-function', 'cubic-bezier(.22, .81, .50, .99)');
+    $('.pixelfresh-logo__image').css('transition', '1s linear').css('-webkit-transform', 'rotate(-360deg)')
+      .css('transition-timing-function', 'cubic-bezier(.22, .81, .50, .99)');
 };
 
 // Animation for Out of brake grand pris game page (2-nd slide)
 function oobpgAnimate() {
-  $('.oobgp-logo__text-box').css('visibility', 'visible');
-  $(".oobgp-logo__text-first-line").addClass('animated bounceInLeft');
-  $(".oobgp-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
-  $(".oobgp-logo__text-third-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
+    $('.oobgp-logo__image-text').addClass('oobgp-logo__image-text--active');
+    $('.oobgp-logo__image-text2').addClass('oobgp-logo__image-text2--active');
 };
 
 // Animation for Out of brake grand pris game page (3-rd slide)
 function oobAnimate() {
-  $('.oob-logo__text-box ').css('visibility', 'visible');
-  $(".oob-logo__text-first-line").addClass('animated bounceInLeft');
-  $(".oob-logo__text-second-line").addClass('animated bounceInRight').css('animation-delay', '0.5s');
+    $('.oob-logo__image-text').addClass('oob-logo__image-text--active');
+    $('.oob-logo__image-text2').addClass('oob-logo__image-text2--active');
 };
 
 
