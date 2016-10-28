@@ -1,0 +1,256 @@
+body {
+   background: linear-gradient(to bottom, #11cde1, #0c739f);  
+}
+
+.fon-top {
+    width: 100%;
+    height: 28px;
+    background: #128aa7;
+    border-bottom: 1px solid #5ef0ff;
+}
+
+.fon-middle {
+    width: 100%;
+    height: 146px;
+    background: -webkit-linear-gradient(top, #11cee1, #ffffff);
+}
+
+.wrapper {
+    position: relative;
+    display: block;
+    width: 1000px;
+    z-index: 3;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #000000, -1px -1px 5px #000000;
+}
+
+/* HEADER */
+
+.header {
+    position: relative;
+    overflow: hidden;
+    height: 175px;
+}
+
+/* Logo */
+
+.logo {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.logo__text {
+    position: absolute;
+    top: 98px;
+    left: 71px;
+    font-family: Tahoma, serif;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+/* Contacts block */
+
+.contacts {
+    float: right;
+    margin-top: 8px;
+    margin-right: 30px;
+}
+
+.contacts__header,
+.contacts__text {
+    font-family: Tahoma, serif;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+.contacts__header {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacts__text {
+    line-height: 1.5;
+}
+
+/* Icons-country block */
+
+.icons-coutry {
+    position: absolute;
+    bottom: 12px;
+    right: 21px;
+    float: right;
+}
+
+.icons-coutry__item {
+    padding-right: 10px;
+    list-style: none;
+}
+
+.icons-coutry__link {
+    display: block;
+    float: left;
+    text-align: center;
+    font-family: Tahoma, serif;
+    font-size: 10px;
+    color: #128aa7;
+}
+
+.icons-coutry__link:nth-child(2) {
+    margin-left: 7px;
+}
+
+.icons-coutry__link:nth-child(3) {
+    margin-left: 3px;
+}
+
+.icons-coutry__link:hover {
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.main {
+    overflow: hidden;
+}
+
+.main__image {
+    height: 235px;
+    background-image: url(../img/main_image.jpg);
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+
+/* Menu */
+
+nav {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 3px #000000;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 28px;
+    background: -webkit-linear-gradient(bottom, #373737, #303030);
+    border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.menu__item {
+    float: left;
+    padding-left: 60px;
+    line-height: 28px;
+    list-style: none;
+}
+
+.menu__link {
+    position: relative;
+    display: block;
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu__link--arrow {
+    padding-left: 5px;
+}
+
+/* Sub-menu */
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    margin-left: -10px;
+    width: 150px;
+    background: #303030;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.sub-menu__item {
+    list-style: none;
+}
+
+.sub-menu__link {
+    display: block;
+    padding-left: 10px;
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sub-menu__item:hover {
+    background: grey;
+}
+
+.menu__item:hover .sub-menu {
+    display: block;
+}
+
+/* Content */
+
+.content {
+    float: left;
+    width: 100%;
+    background: #edeef0;
+    overflow: hidden;
+    position: relative;
+}
+
+.content__column1,
+.content__column2,
+.content__column3 {
+    float: left;
+    padding: 7px 15px;
+    font-family: Tahoma, serif;
+    font-size: 14px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.content__column1,
+.content__column3 {
+    width: 178px;
+    line-height: 1.5;
+    background: #edeef0;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+}
+
+.content__column2 {
+    width: 550px;
+    background: #ffffff;
+}
+
+.content__column-header {
+    text-align: center;
+    font-family: Tahoma, serif;
+    font-size: 18px;
+    color: #424c43;
+}
+
+/* FOOTER*/
+
+.footer {
+    overflow: hidden;
+    background: #0c739f;
+}
+
+.footer__text {
+    text-align: center;
+    line-height: 31px;
+    font-family: Tahoma, serif;
+    font-size: 12px;
+    color: #ffffff;
+}
