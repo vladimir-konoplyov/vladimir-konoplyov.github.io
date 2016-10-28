@@ -8,7 +8,7 @@
 2. В макете есть выпадающее меню, его нужно сделать с помощью position: absolute.
 3. Так же есть три колонки, они должны быть одинаковой высоты вне зависимости от контента.
 
-<img src="https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/blob/master/html_module_3/img/homework4.jpg" alt="Layout for HTML module 4">
+<img src="https://github.com/vladimir-konoplyov/vladimir-konoplyov.github.io/blob/master/html_module_4/img/homework4.jpg" alt="Layout for HTML module 4">
 
 Страница: [http://vladimir-konoplyov.github.io/html_module_4/](http://vladimir-konoplyov.github.io/html_module_4/)
 
