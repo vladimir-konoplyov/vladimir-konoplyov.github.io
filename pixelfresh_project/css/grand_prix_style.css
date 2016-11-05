@@ -147,6 +147,10 @@ main {
     background: #fec959;
 }
 
+.social-buttons--position {
+    line-height: 55px;
+}
+
 .content-text__wrapper {
     margin-top: 28px;
 }
