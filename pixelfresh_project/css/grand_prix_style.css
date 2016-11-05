@@ -16,6 +16,35 @@ body {
     width: 100%;
 }
 
+.social-buttons {
+    position: relative;
+    display: block;
+    background: #fec959;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    padding: 8px 0;
+    width: 864px;
+    margin: 40px auto 30px;
+}
+
+.social-buttons .addthis_sharing_toolbox {
+    margin: 0 auto;
+}
+
+/*.social-buttons .addthis_inline_share_toolbox {
+    width: 400px;
+    height: 40px;
+    background: green;
+    margin: 0 auto;
+    line-height: 55px;
+}*/
+
+/*.addthis_inline_share_toolbox .box  {
+    margin: 0 auto;
+}*/
+
+
+
 /* HEADER */
 
 header {
@@ -138,18 +167,18 @@ main {
     border: 7px solid #fec959;
     border-radius: 5px;
 }
-
+/*
 .social-buttons {
+    margin: 37px auto 0;
     width: 864px;
     height: 55px;
-    margin: 37px auto 0;
     border-radius: 10px;
     background: #fec959;
-}
+}*/
 
-.social-buttons--position {
+/*.social-buttons--position {
     line-height: 55px;
-}
+}*/
 
 .content-text__wrapper {
     margin-top: 28px;
@@ -675,11 +704,11 @@ header {
 }
 
 .logo__text1 {
-    top: 16px;
+    top: 4px;
 }
 
 .logo__text2 {
-    top: 35px;
+    top: 24px;
 }
 
 .header__text-wrapper {
@@ -744,6 +773,10 @@ header {
 .header__text-wrapper {
     left: 50%;
     margin-left: -43%;
+}
+
+.logo__text2 {
+    top: 22px;
 }
 
 .content-text {
