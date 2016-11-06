@@ -144,10 +144,10 @@ main {
     display: block;
     width: 864px;
     margin: 40px auto 30px;
+    padding-top: 5px;
     background: #fec959;
     -webkit-border-radius: 7px;
     border-radius: 7px;
-    border: 4px solid #fec959;
 }
 
 .addthis_sharing_toolbox {
