@@ -1,0 +1,777 @@
+@font-face {
+    font-family: 'Upheaval Pro';
+    src: url('../fonts/UpheavalPro/UpheavalPro-Regular.eot');
+    src: url('../fonts/UpheavalPro/UpheavalPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UpheavalPro/UpheavalPro-Regular.woff') format('woff'),
+        url('../fonts/UpheavalPro/UpheavalPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ee6085;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    height: 463px;
+}
+
+.wrapper__header {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 463px;
+}
+
+.header__bg {
+    position: relative;
+    margin-top: 49px;
+    background: url(../img/outofbrakesgrandprix/outofbrakesgrandprix_header_bg.png)  repeat-x;
+}
+
+.header__image-wrapper {
+    position: absolute;
+    margin-top: -49px;
+    left: 98px;
+}
+
+.logo__text1 {
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+    left: -2000px;
+    -webkit-transition: 0.75s linear;
+}
+
+.logo__text1--active {
+    left: 600px;
+}
+
+.logo__text2 {
+    position: absolute;
+    top: 87px;
+    z-index: 5;
+    left: 2000px;
+    -webkit-transition: 0.75s linear;
+}
+
+.logo__text2--active {
+    left: 629px;
+}
+
+.header__text-wrapper {
+    position: absolute;
+    top: 303px;
+    margin: auto;
+    padding-left: 2%;
+    margin-left: 2%;
+    z-index: 2;
+    left: 50%;
+    width: 75%;
+    margin-left: -38%;
+    line-height: 0.8;
+}
+
+.header__text {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Upheaval Pro';
+    font-size: 34px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header__text span{
+    color: #fec959;
+}
+
+.link-googleplay {
+    position: absolute;
+    top: 379px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/* MAIN */
+
+main {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.wrapper__main {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.screenshots__wrapper {
+    width: 867px;
+    margin: 0 auto;
+}
+
+.screenshot {
+    width: 417px;
+    border: 7px solid #fec959;
+    border-radius: 5px;
+}
+
+.screenshot__link {
+    display: inline-block;
+}
+
+.screenshot__link:nth-child(3),
+.screenshot__link:last-child {
+    margin-top: 4px;
+}
+
+.video {
+    width: 847px;
+    height: 476px;
+    margin: 28px auto 0;
+    border: 7px solid #fec959;
+    border-radius: 5px;
+}
+
+.social-buttons {
+    position: relative;
+    display: block;
+    width: 864px;
+    margin: 40px auto 30px;
+    padding-top: 5px;
+    background: #fec959;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.addthis_sharing_toolbox {
+    margin: 0 auto;
+}
+
+.content-text__wrapper {
+    margin-top: 28px;
+}
+
+.content-text {
+    font-family: 'Upheaval Pro';
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.content-text__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content-text__yellow {
+    color: #fec959;
+}
+
+.content-text--business,
+.content-text--support,
+.content-text--presskit {
+    font-size: 24px;
+}
+
+.content-text--business {
+    margin-top: 21px;
+}
+
+.content-text--support {
+    margin-top: -3px;
+}
+
+.content-text--presskit {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 25px;
+}
+
+.footer__bg{
+    margin-bottom: 48px;
+    text-align: center;
+    background: url(../img/outofbrakesgrandprix/outofbrakesgrandprix_footer_bg.png) repeat-x;
+    height: 120px;
+}
+
+.footer__text {
+    font-family: 'Upheaval Pro';
+    font-size: 24px;
+    padding-top: 52px;
+}
+.footer__text--small {
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1280px) {
+
+/* HEADER */
+
+.header__bg {
+    margin-top: 48px;
+    height: 100%;
+    background-size: 83%;
+}
+
+.header__image-wrapper {
+    width: 67%;
+    left: 6%;
+}
+
+.header__image {
+    width: 100%;
+}
+
+.logo__text1 {
+    position: absolute;
+    z-index: 5;
+    width: 24%;
+    left: -2000px;;
+    -webkit-transition: 0.75s linear;
+}
+
+.logo__text1--active {
+    left: 45.5%;
+}
+
+.logo__text2 {
+    position: absolute;
+    z-index: 5;
+    left: 2000px;
+    width: 36%;
+    -webkit-transition: 0.75s linear;
+}
+
+.logo__text2--active {
+    left: 47.5%;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+/* HEADER */
+
+.wrapper__header {
+    height: 463px;
+}
+
+.header__text-wrapper {
+    top: 295px;
+}
+
+.link-googleplay {
+    top: 380px;
+}
+
+/* FOOTER */
+
+.footer__text {
+    font-size: 20px;
+}
+
+.footer__text--small {
+    padding-top: 8px;
+    font-size: 13px;
+}
+    
+}
+
+@media screen and (max-width: 980px) {
+
+/* HEADER */
+
+header {
+    height: 437px;
+}
+
+.header__bg {
+    margin-top: 38px;
+}
+
+.header__image-wrapper {
+    margin-top: -38px;
+}
+
+.wrapper__header {
+    height: 435px;
+}
+
+.logo__text1--active {
+    left: 45.5%;
+}
+
+.logo__text2 {
+    top: 65px;
+}
+
+.logo__text2--active {
+    left: 47.5%;
+}
+
+.header__text-wrapper {
+    width: 80%;
+    top: 240px;
+}
+
+.header__text {
+    font-size: 28px;
+}
+
+.link-googleplay {
+    top: 329px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    width: 680px;
+}
+
+.screenshot {
+    width: 320px;
+}
+
+.video {
+    width: 670px;
+    height: 380px;
+}
+
+.social-buttons {
+    width: 680px;
+}
+
+.content-text__wrapper {
+    margin-top: 28px;
+}
+
+.content-text {
+    font-size: 28px;
+}
+
+.content-text--business,
+.content-text--support,
+.content-text--presskit {
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer__bg{
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+.footer__text {
+    font-size: 18px;
+}
+
+.footer__text--small {
+    padding-top: 10px;
+    font-size: 11px;
+}
+    
+}
+
+@media screen and (max-width: 768px) {
+
+/* HEADER */
+
+header {
+    height: 325px;
+}
+
+.header__bg {
+    margin-top: 30px;
+}
+
+.header__image-wrapper {
+    margin-top: -30px;
+}
+
+.wrapper__header {
+    height: 350px;
+}
+
+.logo__text1 {
+    top: 7px;
+}
+
+.logo__text2 {
+    top: 50px;
+}
+
+.header__text-wrapper {
+    top: 183px;
+}
+
+.header__text {
+    font-size: 22px;
+}
+
+.link-googleplay {
+    top: 247px;
+}
+
+.link-googleplay__image {
+    width: 120px;
+    height: 42px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    width: 560px;
+}
+
+.screenshot {
+    width: 260px;
+}
+
+.video {
+    width: 546px;
+    height: 305px;
+}
+
+.social-buttons {
+    width: 560px;
+}
+
+.content-text {
+    font-size: 22px;
+}
+
+.content-text--business,
+.content-text--support,
+.content-text--presskit {
+    font-size: 16px;
+}
+
+.content-text--business {
+    margin-top: 12px;
+}
+
+.content-text--support {
+    margin-top: -3px;
+}
+
+.content-text--presskit {
+    margin-top: 12px;
+}
+
+/* FOOTER */
+
+.footer__bg{
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    padding-top: 60px;
+    font-size: 16px;
+}
+
+.footer__text--small {
+    padding-top: 5px;
+    font-size: 10px;
+}
+   
+}
+
+@media screen and (max-width: 640px) {
+
+/* HEADER */
+
+header {
+    height: 287px;
+}
+
+.header__bg {
+    margin-top: 25px;
+}
+
+.header__image-wrapper {
+    margin-top: -25px;
+}
+
+.wrapper__header {
+    height: 320px;
+}
+
+.logo__text1 {
+    top: 6px;
+}
+
+.logo__text2 {
+    top: 41px;
+}
+
+.header__text-wrapper {
+    top: 151px;
+}
+
+.header__text {
+    font-size: 22px;
+}
+
+.link-googleplay {
+    top: 222px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    width: 450px;
+}
+
+.screenshot {
+    width: 208px;
+}
+
+.screenshot:nth-child(3),
+.screenshot:last-child {
+    margin-top: 5px;
+}
+
+.video {
+    width: 436px;
+    height: 244px;
+}
+
+.social-buttons {
+    width: 450px;
+}
+    
+}
+
+@media screen and (max-width: 480px) {
+
+/* HEADER */
+
+header {
+    height: 225px;
+}
+
+.header__bg {
+    margin-top: 20px;
+}
+
+.header__image-wrapper {
+    margin-top: -20px;
+}
+
+.wrapper__header {
+    height: 250px;
+}
+
+.logo__text1 {
+    top: 4px;
+}
+
+.logo__text2 {
+    top: 29px;
+}
+
+.header__text-wrapper {
+    top: 120px;
+}
+
+.header__text {
+    font-size: 16px;
+}
+
+.link-googleplay {
+    top: 172px;
+}
+
+.link-googleplay__image {
+    width: 96px;
+    height: 34px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    width: 260px;
+}
+
+.screenshot {
+    width: 250px;
+}
+
+.screenshot__link:nth-child(3),
+.screenshot__link:last-child {
+    margin-top: 0px;
+}
+
+.video {
+    width: 330px;
+    height: 190px;
+}
+
+.social-buttons {
+    width: 340px;
+}
+
+.content-text {
+    font-size: 16px;
+}
+
+.content-text--business,
+.content-text--support,
+.content-text--presskit {
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+.footer__bg {
+    height: 80px;
+    margin-bottom: 0px;
+    background-size: 100%;
+}
+
+.footer__text {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.footer__text--small {
+    padding-top: 5px;
+    font-size: 8px;
+}
+    
+}
+
+@media screen and (max-width: 360px) {
+
+/* HEADER */
+
+header {
+    height: 180px;
+}
+
+.header__bg {
+    margin-top: 14px;
+}
+
+.header__image-wrapper {
+    margin-top: -14px;
+}
+
+.wrapper__header {
+    height: 210px;
+}
+
+.logo__text1 {
+    top: 4px;
+}
+
+.logo__text2 {
+    top: 24px;
+}
+
+.header__text-wrapper {
+    top: 89px;
+}
+
+.header__text {
+    font-size: 14px;
+}
+
+.link-googleplay {
+    top: 135px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    width: 240px;
+}
+
+.screenshot {
+    width: 230px;
+}
+
+.screenshot:nth-child(3),
+.screenshot:last-child {
+    margin-top: 5px;
+}
+
+.video {
+    width: 270px;
+    height: 170px;
+}
+
+.social-buttons {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer__bg{
+    height: 70px;
+    margin-bottom: 0px;
+    background-size: 100%;
+}
+
+.footer__text {
+    padding-top: 18px;
+    font-size: 12px;
+}
+
+.footer__text--small {
+    display: none;
+}
+    
+}
+
+@media screen and (max-width: 320px) {
+
+/* HEADER */
+
+.header__text-wrapper {
+    left: 50%;
+    margin-left: -43%;
+}
+
+.logo__text2 {
+    top: 22px;
+}
+
+.content-text {
+    font-size: 15px;
+}
+
+.content-text--business,
+.content-text--support,
+.content-text--presskit {
+    font-size: 12px;
+}
+
+/* MAIN */
+
+.screenshots__wrapper {
+    margin-left: 30px;
+}
+
+/* FOOTER*/
+
+.footer__bg {
+    height: 60px;
+    margin-bottom: 0px;
+    background-size: 100%;
+}
+    
+}

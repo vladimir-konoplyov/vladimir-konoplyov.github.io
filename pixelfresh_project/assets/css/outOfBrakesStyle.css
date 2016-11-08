@@ -9,11 +9,12 @@
 }
 
 body {
-    background: #ee6085;
+    background: url(../img/outofbrakes/outofbrakes_body_bg.jpg) center 0 repeat;
 }
 
 .wrapper {
     width: 100%;
+      background: url(../img/outofbrakes/bg_pattern_center.jpg) center 0 repeat-y;
 }
 
 /* HEADER */
@@ -32,7 +33,7 @@ header {
 .header__bg {
     position: relative;
     margin-top: 49px;
-    background: url(../img/oob_gp/outofbrakesgrandprix_header_bg.png)  repeat-x;
+    background: url(../img/outofbrakes/outofbrakes_header_bg.png)  repeat-x;
 }
 
 .header__image-wrapper {
@@ -62,7 +63,7 @@ header {
 }
 
 .logo__text2--active {
-    left: 629px;
+    left: 650px;
 }
 
 .header__text-wrapper {
@@ -91,12 +92,25 @@ header {
     color: #fec959;
 }
 
-.link-googleplay {
+.download-items {
     position: absolute;
     top: 379px;
     left: 0;
     right: 0;
+    margin: 0 auto;
+}
+
+.download-items__inner-wrapper {
+    margin: 0 auto;
     text-align: center;
+}
+
+.download-items__link {
+    display: inline-block;
+}
+
+.download-items__link:last-child {
+    padding-left: 125px;
 }
 
 /* MAIN */
@@ -118,7 +132,7 @@ main {
 
 .screenshot {
     width: 417px;
-    border: 7px solid #fec959;
+    border: 7px solid #257fb0;
     border-radius: 5px;
 }
 
@@ -135,7 +149,7 @@ main {
     width: 847px;
     height: 476px;
     margin: 28px auto 0;
-    border: 7px solid #fec959;
+    border: 7px solid #257fb0;
     border-radius: 5px;
 }
 
@@ -145,7 +159,7 @@ main {
     width: 864px;
     margin: 40px auto 30px;
     padding-top: 5px;
-    background: #fec959;
+    background: #257fb0;
     -webkit-border-radius: 7px;
     border-radius: 7px;
 }
@@ -156,6 +170,7 @@ main {
 
 .content-text__wrapper {
     margin-top: 28px;
+    background: url(../img/outofbrakes/bg_presskit.png) center bottom no-repeat;
 }
 
 .content-text {
@@ -194,20 +209,31 @@ main {
 /* FOOTER */
 
 footer {
+    position: relative;
     margin-top: 25px;
+}
+
+.footer__image-wrapper {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    right: 0;
+    bottom: -60px;
+
 }
 
 .footer__bg{
     margin-bottom: 48px;
     text-align: center;
-    background: url(../img/oob_gp/outofbrakesgrandprix_footer_bg.png) repeat-x;
+    background: url(../img/outofbrakes/outofbrakes_footer_bg.jpg) repeat-x;
     height: 120px;
 }
 
 .footer__text {
+    position: relative;
+    z-index: 3;
     font-family: 'Upheaval Pro';
     font-size: 24px;
-    font-weight: bold;
     padding-top: 52px;
 }
 .footer__text--small {
@@ -256,7 +282,18 @@ footer {
 }
 
 .logo__text2--active {
-    left: 47.5%;
+    left: 48.5%;
+}
+
+/* FOOTER */
+
+
+.footer__image-wrapper {
+    width: 40%;
+}
+
+.footer__image {
+    width: 100%;
 }
 
 }
@@ -279,6 +316,10 @@ footer {
 
 /* FOOTER */
 
+.footer__image-wrapper {
+    bottom: -55px;
+}
+
 .footer__text {
     font-size: 20px;
 }
@@ -287,11 +328,8 @@ footer {
     padding-top: 8px;
     font-size: 13px;
 }
-
     
 }
-
-
 
 @media screen and (max-width: 980px) {
 
@@ -322,7 +360,7 @@ header {
 }
 
 .logo__text2--active {
-    left: 47.5%;
+    left: 48.5%;
 }
 
 .header__text-wrapper {
@@ -334,7 +372,7 @@ header {
     font-size: 28px;
 }
 
-.link-googleplay {
+.download-items {
     top: 329px;
 }
 
@@ -359,6 +397,8 @@ header {
 
 .content-text__wrapper {
     margin-top: 28px;
+    background-size: 70%;
+    background-position: center 10px;
 }
 
 .content-text {
@@ -376,6 +416,15 @@ header {
 .footer__bg{
     margin-bottom: 30px;
     height: 120px;
+}
+
+.footer__image-wrapper {
+    bottom: -40px;
+    width: 385px;
+}
+
+.footer__image {
+    width: 385px;
 }
 
 .footer__text {
@@ -425,11 +474,16 @@ header {
     font-size: 22px;
 }
 
-.link-googleplay {
+.download-items {
     top: 247px;
 }
 
-.link-googleplay__image {
+.download-items__link:last-child {
+    padding-left: 75px;
+}
+
+.link-googleplay__image,
+.link-appstore__image {
     width: 120px;
     height: 42px;
 }
@@ -481,6 +535,15 @@ header {
     margin-bottom: 20px;
 }
 
+.footer__image-wrapper {
+    bottom: -25px;
+    width: 340px;
+}
+
+.footer__image {
+    width: 340px;
+}
+
 .footer__text {
     padding-top: 60px;
     font-size: 16px;
@@ -490,8 +553,7 @@ header {
     padding-top: 5px;
     font-size: 10px;
 }
-
-    
+   
 }
 
 @media screen and (max-width: 640px) {
@@ -530,7 +592,7 @@ header {
     font-size: 22px;
 }
 
-.link-googleplay {
+.download-items {
     top: 222px;
 }
 
@@ -557,7 +619,7 @@ header {
 .social-buttons {
     width: 450px;
 }
-    
+
 }
 
 @media screen and (max-width: 480px) {
@@ -596,11 +658,16 @@ header {
     font-size: 16px;
 }
 
-.link-googleplay {
+.download-items {
     top: 172px;
 }
 
-.link-googleplay__image {
+.download-items__link:last-child {
+    padding-left: 50px;
+}
+
+.link-googleplay__image,
+.link-appstore__image {
     width: 96px;
     height: 34px;
 }
@@ -629,6 +696,10 @@ header {
     width: 340px;
 }
 
+.content-text__wrapper {
+    background: none;
+}
+
 .content-text {
     font-size: 16px;
 }
@@ -645,6 +716,16 @@ header {
     height: 80px;
     margin-bottom: 0px;
     background-size: 100%;
+}
+
+.footer__image-wrapper {
+        display: none;
+    bottom: 0px;
+    width: 230px;
+}
+
+.footer__image {
+    width: 230px;
 }
 
 .footer__text {
@@ -695,8 +776,11 @@ header {
     font-size: 14px;
 }
 
-.link-googleplay {
+.download-items {
     top: 135px;
+}
+.download-items__link:last-child {
+    padding-left: 30px;
 }
 
 /* MAIN */
@@ -729,6 +813,15 @@ header {
     height: 70px;
     margin-bottom: 0px;
     background-size: 100%;
+}
+
+.footer__image-wrapper {
+    bottom: 0px;
+    width: 180px;
+}
+
+.footer__image {
+    width: 180px;
 }
 
 .footer__text {
