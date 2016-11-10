@@ -9,12 +9,23 @@
 }
 
 body {
+    position: relative;
+    z-index: 0;
     background: url(../img/outofbrakes/outofbrakes_body_bg.jpg) center 0 repeat;
 }
 
-.wrapper {
+
+.wrapper__outer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
     width: 100%;
-      background: url(../img/outofbrakes/bg_pattern_center.jpg) center 0 repeat-y;
+    background: url(../img/outofbrakes/outofbrakes_center_bg.jpg) center 0 repeat-y;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
 }
 
 /* HEADER */
@@ -32,7 +43,7 @@ header {
 
 .header__bg {
     position: relative;
-    margin-top: 49px;
+    margin-top: 45px;
     background: url(../img/outofbrakes/outofbrakes_header_bg.png)  repeat-x;
 }
 
@@ -44,7 +55,7 @@ header {
 
 .logo__text1 {
     position: absolute;
-    top: 10px;
+    top: 13px;
     z-index: 5;
     left: -2000px;
     -webkit-transition: 0.75s linear;
@@ -56,7 +67,7 @@ header {
 
 .logo__text2 {
     position: absolute;
-    top: 87px;
+    top: 92px;
     z-index: 5;
     left: 2000px;
     -webkit-transition: 0.75s linear;
@@ -210,20 +221,23 @@ main {
 
 footer {
     position: relative;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 
 .footer__image-wrapper {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: block;
-    right: 0;
-    bottom: -60px;
+    right: 10%;
+    bottom: -44px;
+}
 
+.footer__image {
+    margin-bottom: -5px;
 }
 
 .footer__bg{
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     text-align: center;
     background: url(../img/outofbrakes/outofbrakes_footer_bg.jpg) repeat-x;
     height: 120px;
@@ -237,7 +251,7 @@ footer {
     padding-top: 52px;
 }
 .footer__text--small {
-    padding-top: 4px;
+    padding-top: 0px;
     font-size: 16px;
     font-weight: normal;
 }
@@ -247,14 +261,14 @@ footer {
 /* HEADER */
 
 .header__bg {
-    margin-top: 48px;
+    margin-top: 46px;
     height: 100%;
     background-size: 83%;
 }
 
 .header__image-wrapper {
-    width: 67%;
-    left: 6%;
+    width: 69%;
+    left: 5.5%;
 }
 
 .header__image {
@@ -270,23 +284,22 @@ footer {
 }
 
 .logo__text1--active {
-    left: 45.5%;
+    left: 46%;
 }
 
 .logo__text2 {
     position: absolute;
     z-index: 5;
     left: 2000px;
-    width: 36%;
+    width: 35%;
     -webkit-transition: 0.75s linear;
 }
 
 .logo__text2--active {
-    left: 48.5%;
+    left: 49%;
 }
 
 /* FOOTER */
-
 
 .footer__image-wrapper {
     width: 40%;
@@ -340,7 +353,7 @@ header {
 }
 
 .header__bg {
-    margin-top: 38px;
+    margin-top: 46px;
 }
 
 .header__image-wrapper {
@@ -414,12 +427,12 @@ header {
 /* FOOTER */
 
 .footer__bg{
-    margin-bottom: 30px;
+    margin-bottom: 51px;
     height: 120px;
 }
 
 .footer__image-wrapper {
-    bottom: -40px;
+    bottom: -50px;
     width: 385px;
 }
 
@@ -532,10 +545,11 @@ header {
 /* FOOTER */
 
 .footer__bg{
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 
 .footer__image-wrapper {
+    right: 5%;
     bottom: -25px;
     width: 340px;
 }
@@ -715,7 +729,7 @@ header {
 .footer__bg {
     height: 80px;
     margin-bottom: 0px;
-    background-size: 100%;
+    background-size: 100% 75%;
 }
 
 .footer__image-wrapper {
@@ -810,7 +824,7 @@ header {
 /* FOOTER */
 
 .footer__bg{
-    height: 70px;
+    height: 60px;
     margin-bottom: 0px;
     background-size: 100%;
 }
@@ -825,7 +839,7 @@ header {
 }
 
 .footer__text {
-    padding-top: 18px;
+    padding-top: 13px;
     font-size: 12px;
 }
 
@@ -867,7 +881,7 @@ header {
 /* FOOTER*/
 
 .footer__bg {
-    height: 60px;
+    height: 50px;
     margin-bottom: 0px;
     background-size: 100%;
 }
