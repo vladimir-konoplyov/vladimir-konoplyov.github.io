@@ -46,7 +46,8 @@ header {
     top: 10px;
     z-index: 5;
     left: -2000px;
-    -webkit-transition: 0.75s linear;
+    -webkit-transition: 1s linear;
+    -webkit-transition-delay: 0.5s;
 }
 
 .logo__text1--active {
@@ -58,7 +59,8 @@ header {
     top: 87px;
     z-index: 5;
     left: 2000px;
-    -webkit-transition: 0.75s linear;
+    -webkit-transition: 1s linear;
+    -webkit-transition-delay: 1s
 }
 
 .logo__text2--active {
