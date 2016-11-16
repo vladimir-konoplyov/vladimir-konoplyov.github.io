@@ -32,7 +32,7 @@ header {
 .header__bg {
     position: relative;
     margin-top: 49px;
-    background: url(../img/outofbrakesgrandprix/outofbrakesgrandprix_header_bg.png)  repeat-x;
+    background: url(../img/grandprix/outofbrakesgrandprix_header_bg.png)  repeat-x;
 }
 
 .header__image-wrapper {
@@ -202,7 +202,7 @@ footer {
 .footer__bg{
     margin-bottom: 48px;
     text-align: center;
-    background: url(../img/outofbrakesgrandprix/outofbrakesgrandprix_footer_bg.png) repeat-x;
+    background: url(../img/grandprix/outofbrakesgrandprix_footer_bg.png) repeat-x;
     height: 120px;
 }
 
