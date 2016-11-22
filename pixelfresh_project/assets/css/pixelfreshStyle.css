@@ -242,6 +242,10 @@
 }
 
 @media screen and (max-width: 980px) {
+
+#fp-nav {
+	margin-top: 60px !important;
+}
 	
 .pixelfresh-image {
 	width: 150px;
@@ -289,6 +293,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+#fp-nav {
+	margin-top: -43.5px !important;
+}
 
 .pixelfresh-logo {
 	bottom: 55%;
